@@ -1,0 +1,57 @@
+{
+  "name": "angular-feather-icons",
+  "version": "2.4.0",
+  "description": "Feather Icons Library for your Angular Applications",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaelbazos/angular-feather-icons.git"
+  },
+  "keywords": [
+    "angular2",
+    "angular",
+    "feather",
+    "icons",
+    "svg",
+    "2",
+    "ui",
+    "components",
+    "library"
+  ],
+  "author": "Michael Bazos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/michaelbazos/angular-feather-icons/issues"
+  },
+  "homepage": "https://github.com/michaelbazos/angular-feather-icons#readme",
+  "engines": {
+    "node": ">= 6.9.0",
+    "npm": ">= 3.0.0"
+  },
+  "scripts": {
+    "generate": "node generate.js",
+    "build:raw": "node build-raw.js",
+    "build:lib": "node build-lib.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@angular/compiler": "^4.2.4",
+    "@angular/compiler-cli": "^4.2.4",
+    "@angular/core": "^4.2.4",
+    "angular-inline-resources": "^1.2.0",
+    "camelcase": "^4.1.0",
+    "cpy": "^5.0.0",
+    "del": "^2.2.2",
+    "fs-extra": "^3.0.1",
+    "rollup": "^0.42.0",
+    "rollup-plugin-sourcemaps": "^0.4.2",
+    "rollup-plugin-uglify": "^2.0.1",
+    "rxjs": "^5.4.1",
+    "tslint": "^5.4.2",
+    "typescript": "^2.4.1",
+    "uppercamelcase": "^3.0.0",
+    "zone.js": "^0.8.4"
+  },
+  "dependencies": {
+    "feather-icons": "2.4.0"
+  }
+}
