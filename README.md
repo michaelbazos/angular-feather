@@ -27,7 +27,7 @@ Icons are designed by [Cole Bemis](https://github.com/colebemis/).
       IconAlertTriangle
     ]
   })
-  export class MyIconModule { }
+  export class MyFancyModule { }
   ```
   
   _3. Use it in template_
