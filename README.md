@@ -7,7 +7,9 @@
 
 Simply beautiful SVG icons for your angular applications. 
 
-Icons are designed by [Cole Bemis](https://github.com/colebemis/).
+This package allows you to use the [Feather Icons](https://feathericons.com/) in your angular applications. The icons are designed by Cole Bemis.
+
+Import only the icons you need.
 
 ### Usage
 
