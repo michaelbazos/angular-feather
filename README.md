@@ -13,7 +13,7 @@ Icons are designed by [Cole Bemis](https://github.com/colebemis/).
 
 1. Install the package
 
-```
+```sh
 npm install angular-feather-icons
 ```
 
@@ -21,7 +21,7 @@ npm install angular-feather-icons
 
 Import the icons _a la carte_ in the angular module of your needs.
 
-```
+```ts
 @NgModule({
   imports: [
     IconAlertTriangle
@@ -32,7 +32,7 @@ export class MyIconModule { }
 
 3. Use it in template
 
-```
+```html
 <i-alert-triangle></i-alert-triangle>
 ```
     
