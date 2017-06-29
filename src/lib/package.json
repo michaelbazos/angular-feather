@@ -1,5 +1,6 @@
 {
   "name": "angular-feather-icons",
+  "version": "2.4.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/michaelbazos/angular-feather-icons"
@@ -8,6 +9,17 @@
     "name": "Michael Bazos",
     "email": "micabazos@gmail.com"
   },
+  "keywords": [
+    "angular2",
+    "angular",
+    "feather",
+    "icons",
+    "svg",
+    "2",
+    "ui",
+    "components",
+    "library"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/michaelbazos/angular-feather-icons/issues"
