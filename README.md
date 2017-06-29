@@ -11,13 +11,13 @@ Icons are designed by [Cole Bemis](https://github.com/colebemis/).
 
 ### Usage
 
-1. Install the package
+_1. Install the package_
 
 ```sh
 npm install angular-feather-icons
 ```
 
-2. Import the icons you need
+_2. Import the icons you need_
 
 Import the icons _a la carte_ in the angular module of your needs.
 
@@ -30,7 +30,7 @@ Import the icons _a la carte_ in the angular module of your needs.
 export class MyIconModule { }
 ```
 
-3. Use it in template
+_3. Use it in template_
 
 ```html
 <i-alert-triangle></i-alert-triangle>
