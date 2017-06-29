@@ -29,8 +29,7 @@
   },
   "scripts": {
     "generate": "node generate.js",
-    "build:raw": "node build-raw.js",
-    "build:lib": "node build-lib.js",
+    "build": "node build.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
