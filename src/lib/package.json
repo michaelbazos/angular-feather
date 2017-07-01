@@ -1,9 +1,9 @@
 {
-  "name": "angular-feather-icons",
+  "name": "angular-feather",
   "version": "2.4.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/michaelbazos/angular-feather-icons"
+    "url": "https://github.com/michaelbazos/angular-feather"
   },
   "author": {
     "name": "Michael Bazos",
@@ -22,13 +22,13 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/michaelbazos/angular-feather-icons/issues"
+    "url": "https://github.com/michaelbazos/angular-feather/issues"
   },
   "peerDependencies": {
     "@angular/core": ">= 4.0.0 < 5.0.0"
   },
-  "main": "bundles/angular-feather-icons.umd.js",
-  "module": "angular-feather-icons.es5.js",
-  "es2015": "angular-feather-icons.js",
-  "typings": "angular-feather-icons.d.ts"
+  "main": "bundles/angular-feather.umd.js",
+  "module": "angular-feather.es5.js",
+  "es2015": "angular-feather.js",
+  "typings": "angular-feather.d.ts"
 }

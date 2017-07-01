@@ -19,8 +19,8 @@
   "angularCompilerOptions": {
     "annotateForClosureCompiler": true,
     "strictMetadataEmit": true,
-    "flatModuleOutFile": "angular-feather-icons.js",
-    "flatModuleId": "angular-feather-icons",
+    "flatModuleOutFile": "angular-feather.js",
+    "flatModuleId": "angular-feather",
     "skipTemplateCodegen": true
   }
 }
