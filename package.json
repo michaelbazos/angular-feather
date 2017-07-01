@@ -1,10 +1,10 @@
 {
-  "name": "angular-feather-icons",
+  "name": "angular-feather",
   "version": "2.4.0",
   "description": "Feather Icons Library for your Angular Applications",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/michaelbazos/angular-feather-icons.git"
+    "url": "git+https://github.com/michaelbazos/angular-feather.git"
   },
   "keywords": [
     "angular2",
@@ -20,9 +20,9 @@
   "author": "Michael Bazos",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/michaelbazos/angular-feather-icons/issues"
+    "url": "https://github.com/michaelbazos/angular-feather/issues"
   },
-  "homepage": "https://github.com/michaelbazos/angular-feather-icons#readme",
+  "homepage": "https://github.com/michaelbazos/angular-feather#readme",
   "engines": {
     "node": ">= 6.9.0",
     "npm": ">= 3.0.0"
