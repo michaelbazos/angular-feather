@@ -1,8 +1,8 @@
 ## angular-feather
 ###### _Feather icons for angular applications_
 
-[![npm](https://img.shields.io/npm/v/angular-feather.svg)]()
-[![npm](https://img.shields.io/npm/l/angular-feather.svg)]()
+[![npm](https://img.shields.io/npm/v/angular-feather.svg?style=flat-square)]()
+[![npm](https://img.shields.io/npm/l/angular-feather.svg?style=flat-square)]()
 
 ### Description
 
