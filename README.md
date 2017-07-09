@@ -1,12 +1,9 @@
 ## angular-feather
-###### _Feather icons for angular applications_
 
 [![npm](https://img.shields.io/npm/v/angular-feather.svg?style=flat-square)]()
 [![npm](https://img.shields.io/npm/l/angular-feather.svg?style=flat-square)]()
 
 ### Description
-
-Simply beautiful SVG icons for your angular applications. 
 
 This package allows you to use the [Feather Icons](https://github.com/colebemis/feather) in your angular applications. The icons are designed by Cole Bemis.
 
