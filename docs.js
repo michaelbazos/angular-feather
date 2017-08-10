@@ -2,11 +2,11 @@ const del = require('del');
 const fs = require('fs-extra');
 const uppercamelcase = require('uppercamelcase');
 
-const iconsSrcFolder = 'node_modules/feather-icons/icons';
+const iconsSrcFolder = 'node_modules/feather-icons/dist/icons';
 
 const iconListFile = 'LIST.md';
 
-const rawgitBaseUrl = 'https://cdn.rawgit.com/michaelbazos/angular-feather/42c5d7ca/docs/icons';
+const rawgitBaseUrl = 'https://cdn.rawgit.com/michaelbazos/angular-feather/f513b769/docs/icons';
 
 
 return Promise.resolve()
@@ -17,16 +17,12 @@ return Promise.resolve()
     fs.appendFileSync(iconListFile, `|     | Icon  | Symbol to import | Component selector |\n`);
     fs.appendFileSync(iconListFile, `| --- | ----- | ---------------- | ------------------ |\n`);
 
-    fs.readdirSync(iconsSrcFolder).forEach(category => {
-      'use strict';
-
-      // category begin
-      fs.readdirSync(`${iconsSrcFolder}/${category}`).forEach(filename => {
+      fs.readdirSync(`${iconsSrcFolder}`).forEach(filename => {
         'use strict';
         const name = stripExtension(filename);
         const moduleName = `Icon${uppercamelcase(name)}`;
 
-        const svgUrl = `${rawgitBaseUrl}/${category}/${filename}`;
+        const svgUrl = `${rawgitBaseUrl}/${filename}`;
 
         fs.appendFileSync(
           iconListFile,
@@ -34,8 +30,6 @@ return Promise.resolve()
         );
       });
 
-      // fs.appendFileSync(iconListFile, `\n`);
-    });
   })
   .catch((err) => console.log(err));
 
