@@ -1,12 +1,15 @@
 const del = require('del');
 const fs = require('fs-extra');
 const uppercamelcase = require('uppercamelcase');
+const execSync = require('child_process').execSync;
 
 const iconsSrcFolder = 'node_modules/feather-icons/dist/icons';
 
 const iconListFile = 'LIST.md';
 
-const rawgitBaseUrl = 'https://cdn.rawgit.com/michaelbazos/angular-feather/f513b769/docs/icons';
+const commitNumber = execSync('git rev-parse HEAD').toString().trim();
+
+const rawgitBaseUrl = `https://cdn.rawgit.com/michaelbazos/angular-feather/${commitNumber}/docs/icons`;
 
 
 return Promise.resolve()

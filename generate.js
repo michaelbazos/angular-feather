@@ -4,6 +4,7 @@ const uppercamelcase = require('uppercamelcase');
 
 const iconsSrcFolder = 'node_modules/feather-icons/dist/icons';
 const iconsDestFolder = 'src/lib/feather';
+const docsIconsFolder = 'docs/icons';
 const indexFile = 'src/lib/index.ts';
 
 const componentTemplate = fs.readFileSync('src/templates/component.ts.tpl', 'utf-8');
@@ -26,6 +27,8 @@ return Promise.resolve()
         .replace(/__MODULE_NAME__/, moduleName);
 
       fs.writeFileSync(`${iconsDestFolder}/${name}.ts`, output, 'utf-8');
+
+      fs.copySync(`${iconsSrcFolder}/${filename}`, `${docsIconsFolder}/${filename}`);
 
       fs.appendFileSync(
         indexFile,
