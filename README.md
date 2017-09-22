@@ -292,7 +292,11 @@ Refer to the table below for the list of all available icons.
 | ![zoom-in](https://cdn.rawgit.com/michaelbazos/angular-feather/ec869e49f7467abdebe6852ba6e9dff0b5dd4163/docs/icons/zoom-in.svg) | `zoom-in` | `IconZoomIn` | `<i-zoom-in>` |
 | ![zoom-out](https://cdn.rawgit.com/michaelbazos/angular-feather/ec869e49f7467abdebe6852ba6e9dff0b5dd4163/docs/icons/zoom-out.svg) | `zoom-out` | `IconZoomOut` | `<i-zoom-out>` |
 
+### FAQ
 
+_1. Can I import all icons at once?_
+
+See [issue 1](https://github.com/michaelbazos/angular-feather/issues/1)
 
 ### License
 
