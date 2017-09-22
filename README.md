@@ -21,16 +21,25 @@ Import only the icons you need.
   
   _2. Import the icons you need_
   
-  Import the icons _a la carte_ in the angular module of your needs.
+  Import the icons _a la carte_. Keep consistency by defining an `IconsModule`. As this angular module doesn't use the icons, it only uses the `exports` array property to export the icons your feature module need. Therefore you deal only with the aggregation `IconsModule` when you need to import icons in feature modules.
   
-  ```ts
+  ```ts  
+  import { NgModule } from '@angular/core';
+  
+  import { IconLogIn, IconLogOut, IconUser } from 'angular-feather';
+  
   @NgModule({
-    imports: [
-      IconAlertTriangle
+    exports: [
+      IconLogIn,
+      IconLogOut,
+      IconUser
     ]
   })
-  export class MyFancyModule { }
+  export class IconsModule { }
   ```
+  
+  ```
+  
   
   _3. Use it in template_
   
