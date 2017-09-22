@@ -13,39 +13,36 @@ Import only the icons you need.
 
 ### Usage
 
-  _1. Install the package_
+_1. Install the package_
+
+```sh
+npm install angular-feather
+```
   
-  ```sh
-  npm install angular-feather
-  ```
+_2. Import the icons you need_
   
-  _2. Import the icons you need_
-  
-  Import the icons _a la carte_. Keep consistency by defining an `IconsModule`. As this angular module doesn't use the icons, it only uses the `exports` array property to export the icons your feature module need. Therefore you deal only with the aggregation `IconsModule` when you need to import icons in feature modules.
-  
-  ```ts  
-  import { NgModule } from '@angular/core';
-  
-  import { IconLogIn, IconLogOut, IconUser } from 'angular-feather';
-  
-  @NgModule({
-    exports: [
-      IconLogIn,
-      IconLogOut,
-      IconUser
-    ]
-  })
-  export class IconsModule { }
-  ```
-  
-  ```
-  
-  
-  _3. Use it in template_
-  
-  ```html
-  <i-alert-triangle></i-alert-triangle>
-  ```
+Import the icons _a la carte_. Keep consistency by defining an `IconsModule`. As this angular module doesn't use the icons, it only uses the `exports` array property to export the icons your feature module need. Therefore you deal only with the aggregation `IconsModule` when you need to import icons in feature modules.
+
+```ts  
+import { NgModule } from '@angular/core';
+
+import { IconLogIn, IconLogOut, IconUser } from 'angular-feather';
+
+@NgModule({
+  exports: [
+    IconLogIn,
+    IconLogOut,
+    IconUser
+  ]
+})
+export class IconsModule { }
+```
+
+_3. Use it in template_
+
+```html
+<i-alert-triangle></i-alert-triangle>
+```
     
 Refer to the table below for the list of all available icons.
 
