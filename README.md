@@ -41,7 +41,9 @@ export class IconsModule { }
 _3. Use it in template_
 
 ```html
-<i-alert-triangle></i-alert-triangle>
+<i-log-in></i-log-in>
+<i-log-out></i-log-out>
+<i-user></i-user>
 ```
     
 Refer to the table below for the list of all available icons.
