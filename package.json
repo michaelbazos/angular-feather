@@ -40,6 +40,7 @@
     "cpy": "^6.0.0",
     "del": "^3.0.0",
     "fs-extra": "^5.0.0",
+    "lodash.merge": "^4.6.0",
     "rollup": "^0.55.0",
     "rollup-plugin-sourcemaps": "^0.4.2",
     "rollup-plugin-uglify": "^3.0.0",

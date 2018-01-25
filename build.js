@@ -5,6 +5,7 @@ const getPath = require('path').resolve;
 const copy = require('cpy');
 const deleteFolders = require('del');
 const fs = require('fs-extra');
+const merge = require('lodash.merge');
 
 const inlineResources = require('angular-inline-resources');
 const ngc = require('@angular/compiler-cli/src/main').main;
@@ -32,12 +33,12 @@ return Promise.resolve()
   .then(() => log('✓ Inline angular sources'))
 
   // Compile to es2015
-  .then(() => ngc({project: `tmp/lib/tsconfig.json`}))
+  .then(() => ngc(['-p', `tmp/lib/tsconfig.json`]))
   .then(exitCode => exitCode === 0 ? Promise.resolve() : Promise.reject())
   .then(() => log('✓ Compile to es2015'))
 
   // Compile to es5
-  .then(() => ngc({project: `tmp/lib/tsconfig.es5.json`}))
+  .then(() => ngc(['-p', `tmp/lib/tsconfig.es5.json`]))
   .then(exitCode => exitCode === 0 ? Promise.resolve() : Promise.reject())
   .then(() => log('✓ Compile to es5'))
 
@@ -55,17 +56,19 @@ return Promise.resolve()
   )
   .then(() => {
     // Generate bundles (using rollup)
-    const es5Entry = getPath(`build/es5/${pkg.name}.js`);
-    const es2015Entry = getPath(`build/es2015/${pkg.name}.js`);
+    const es5Input = getPath(`build/es5/${pkg.name}.js`);
+    const es2015Input = getPath(`build/es2015/${pkg.name}.js`);
 
     const rollupBaseConfig = {
-      moduleName: camelcase(pkg.name),
-      sourceMap: true,
+      output: {
+        name: camelcase(pkg.name),
+        globals: {
+          '@angular/core': 'ng.core'
+        },
+        sourcemap: true,
+      },
       // Add below the peer dependencies
       // of library's package.json
-      globals: {
-        '@angular/core': 'ng.core'
-      },
       external: [
         '@angular/core'
       ],
@@ -75,31 +78,39 @@ return Promise.resolve()
     };
 
     // fesm5 module
-    const fesm5Config = Object.assign({}, rollupBaseConfig, {
-      entry: es5Entry,
-      dest: getPath(`${distFolder}/${pkg.name}.es5.js`),
-      format: 'es'
+    const fesm5Config = merge({}, rollupBaseConfig, {
+      input: es5Input,
+      output: {
+        file: getPath(`${distFolder}/${pkg.name}.es5.js`),
+        format: 'es',
+      }
     });
 
     // fesm2015
-    const fesm2015Config = Object.assign({}, rollupBaseConfig, {
-      entry: es2015Entry,
-      dest: getPath(`${distFolder}/${pkg.name}.js`),
-      format: 'es'
+    const fesm2015Config = merge({}, rollupBaseConfig, {
+      input: es2015Input,
+      output: {
+        file: getPath(`${distFolder}/${pkg.name}.js`),
+        format: 'es',
+      }
     });
 
     // umd
-    const umdConfig = Object.assign({}, rollupBaseConfig, {
-      entry: es5Entry,
-      dest: getPath(`${distFolder}/bundles/${pkg.name}.umd.js`),
-      format: 'umd',
+    const umdConfig = merge({}, rollupBaseConfig, {
+      input: es5Input,
+      output: {
+        file: getPath(`${distFolder}/bundles/${pkg.name}.umd.js`),
+        format: 'umd',
+      }
     });
 
     // umd minified
-    const umdConfigMinified = Object.assign({}, rollupBaseConfig, {
-      entry: es5Entry,
-      dest: getPath(`${distFolder}/bundles/${pkg.name}.umd.min.js`),
-      format: 'umd',
+    const umdConfigMinified = merge({}, rollupBaseConfig, {
+      input: es5Input,
+      output: {
+        file: getPath(`${distFolder}/bundles/${pkg.name}.umd.min.js`),
+        format: 'umd',
+      },
       plugins: rollupBaseConfig.plugins.concat([uglify({})])
     });
 
@@ -108,7 +119,7 @@ return Promise.resolve()
       fesm2015Config,
       umdConfig,
       umdConfigMinified,
-    ].map(conf => rollup.rollup(conf).then(bundle => bundle.write(conf)));
+    ].map(conf => rollup.rollup(conf).then(bundle => bundle.write(conf.output)));
 
     return Promise.all(arrayConfig)
       .then(() => console.log('✓ Generation of bundles'))
