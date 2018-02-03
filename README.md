@@ -9,7 +9,7 @@
 
 This package allows you to use the [Feather Icons](https://github.com/colebemis/feather) in your angular applications. The icons are designed by Cole Bemis.
 
-Import only the icons you need.
+Import only the icons you need :)
 
 ### Usage
 
