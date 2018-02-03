@@ -17,8 +17,8 @@ return Promise.resolve()
   .then(() => del([iconListFile]))
   // create destination folder
   .then(() => {
-    fs.appendFileSync(iconListFile, `|     | Icon  | Symbol to import | Component selector |\n`);
-    fs.appendFileSync(iconListFile, `| --- | ----- | ---------------- | ------------------ |\n`);
+    fs.appendFileSync(iconListFile, `|     | Symbol to import | Component selector |\n`);
+    fs.appendFileSync(iconListFile, `| --- | ---------------- | ------------------ |\n`);
 
       fs.readdirSync(`${iconsSrcFolder}`).forEach(filename => {
         'use strict';
@@ -29,7 +29,7 @@ return Promise.resolve()
 
         fs.appendFileSync(
           iconListFile,
-          `| ![${name}](${svgUrl}) | \`${name}\` | \`${moduleName}\` | \`<i-${name}>\` |\n`
+          `| ![${name}](${svgUrl}) | \`${moduleName}\` | \`<i-${name}>\` |\n`
         );
       });
 
