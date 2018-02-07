@@ -1,59 +1,3 @@
-## angular-feather
-
-[![npm](https://img.shields.io/npm/v/angular-feather.svg?style=flat-square)]()
-[![license](https://img.shields.io/npm/l/angular-feather.svg?style=flat-square)]()
-[![stars](https://img.shields.io/github/stars/michaelbazos/angular-feather.svg?style=flat-square)]()
-[![deps status](https://david-dm.org/michaelbazos/angular-feather/status.svg?style=flat-square)](https://david-dm.org/michaelbazos/angular-feather)
-
-### Description
-
-This package allows you to use the [Feather Icons](https://github.com/colebemis/feather) in your angular applications. The icons are designed by Cole Bemis.
-
-Import only the icons that you need :)
-
-<h3>
-  <a href="https://stackblitz.com/edit/angular-feather?file=app%2Fapp.component.html">
-    Live Demo
-  </a>
-</h3>
-
-### Usage
-
-_1. Install the package_
-
-```sh
-npm install angular-feather
-```
-  
-_2. Import the icons you need_
-  
-Import the icons _a la carte_. Keep consistency by defining an `IconsModule`. As this angular module doesn't use the icons, it only uses the `exports` array property to export the icons your feature module need. Therefore you deal only with the aggregation `IconsModule` when you need to import icons in feature modules.
-
-```ts  
-import { NgModule } from '@angular/core';
-
-import { IconLogIn, IconLogOut, IconUser } from 'angular-feather';
-
-@NgModule({
-  exports: [
-    IconLogIn,
-    IconLogOut,
-    IconUser
-  ]
-})
-export class IconsModule { }
-```
-
-_3. Use it in template_
-
-```html
-<i-log-in></i-log-in>
-<i-log-out></i-log-out>
-<i-user></i-user>
-```
-    
-Refer to the table below for the list of all available icons.
-
 |     | Symbol to import | Component selector |
 | --- | ---------------- | ------------------ |
 | ![activity](https://cdn.rawgit.com/michaelbazos/angular-feather/0183b1edfa41235532f4fd303256dd1e97ed7835/docs/icons/activity.svg) | `IconActivity` | `<i-activity>` |
@@ -319,13 +263,3 @@ Refer to the table below for the list of all available icons.
 | ![zap](https://cdn.rawgit.com/michaelbazos/angular-feather/0183b1edfa41235532f4fd303256dd1e97ed7835/docs/icons/zap.svg) | `IconZap` | `<i-zap>` |
 | ![zoom-in](https://cdn.rawgit.com/michaelbazos/angular-feather/0183b1edfa41235532f4fd303256dd1e97ed7835/docs/icons/zoom-in.svg) | `IconZoomIn` | `<i-zoom-in>` |
 | ![zoom-out](https://cdn.rawgit.com/michaelbazos/angular-feather/0183b1edfa41235532f4fd303256dd1e97ed7835/docs/icons/zoom-out.svg) | `IconZoomOut` | `<i-zoom-out>` |
-
-### FAQ
-
-_1. Can I import all icons at once?_
-
-See [issue 1](https://github.com/michaelbazos/angular-feather/issues/1)
-
-### License
-
-MIT © [Michael Bazos](mailto:micabazos@gmail.com)
