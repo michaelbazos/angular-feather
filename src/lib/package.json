@@ -25,7 +25,7 @@
     "url": "https://github.com/michaelbazos/angular-feather/issues"
   },
   "peerDependencies": {
-    "@angular/core": ">= 4.0.0 < 5.0.0"
+    "@angular/core": ">= 4.0.0"
   },
   "main": "bundles/angular-feather.umd.js",
   "module": "angular-feather.es5.js",
