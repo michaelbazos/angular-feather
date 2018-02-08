@@ -51,6 +51,6 @@
     "zone.js": "^0.8.20"
   },
   "dependencies": {
-    "feather-icons": "^4.5.0"
+    "feather-icons": "4.5.0"
   }
 }
