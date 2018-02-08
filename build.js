@@ -18,6 +18,8 @@ const rollup = require('rollup');
 const sourcemaps = require('rollup-plugin-sourcemaps');
 const uglify = require('rollup-plugin-uglify');
 
+const version = require('./package.json').dependencies['feather-icons'];
+
 const distFolder = 'dist';
 
 
@@ -51,7 +53,10 @@ return Promise.resolve()
     .then(() => copy('**/*.metadata.json', getPath(distFolder), { cwd: getPath('build/es2015'), parents: true }))
     .then(() => copy('LICENSE', getPath(distFolder), { cwd: getPath('.') }))
     .then(() => copy('README.md', getPath(distFolder), { cwd: getPath('.') }))
-    .then(() => copy('package.json', getPath(distFolder), { cwd: getPath('src/lib') }))
+    .then(() => {
+      pkg.version = version;
+      fs.writeFileSync(`${distFolder}/package.json`, JSON.stringify(pkg, null, 2));
+    })
     .then(() => console.log(`✓ Copy typings, metadata, and other resources to ${distFolder} folder`))
   )
   .then(() => {

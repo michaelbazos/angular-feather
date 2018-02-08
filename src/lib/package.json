@@ -1,6 +1,7 @@
 {
   "name": "angular-feather",
-  "version": "3.0.0",
+  "version": "__VERSION__",
+  "description": "Feather Icons Components for your Angular Applications",
   "repository": {
     "type": "git",
     "url": "https://github.com/michaelbazos/angular-feather"
