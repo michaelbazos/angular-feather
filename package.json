@@ -1,7 +1,7 @@
 {
   "name": "angular-feather",
-  "version": "3.2.2",
-  "description": "Feather Icons Library for your Angular Applications",
+  "private": true,
+  "description": "This is the 'outer' package.json, used for building the library",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/michaelbazos/angular-feather.git"
