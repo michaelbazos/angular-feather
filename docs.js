@@ -1,15 +1,14 @@
 const del = require('del');
 const fs = require('fs-extra');
 const uppercamelcase = require('uppercamelcase');
-const execSync = require('child_process').execSync;
 
 const iconsSrcFolder = 'node_modules/feather-icons/dist/icons';
 
 const iconListFile = 'LIST.md';
 
-const commitNumber = execSync('git rev-parse HEAD').toString().trim();
+const version = require('./package.json').dependencies['feather-icons'];
 
-const rawgitBaseUrl = `https://cdn.rawgit.com/michaelbazos/angular-feather/${commitNumber}/docs/icons`;
+const rawgitUrl = `https://cdn.rawgit.com/feathericons/feather/v${version}/icons`;
 
 
 return Promise.resolve()
@@ -25,7 +24,7 @@ return Promise.resolve()
         const name = stripExtension(filename);
         const moduleName = `Icon${uppercamelcase(name)}`;
 
-        const svgUrl = `${rawgitBaseUrl}/${filename}`;
+        const svgUrl = `${rawgitUrl}/${filename}`;
 
         fs.appendFileSync(
           iconListFile,
