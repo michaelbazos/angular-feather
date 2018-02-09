@@ -8,14 +8,14 @@
 ### Description
 
 This package allows you to use the [Feather Icons](https://github.com/colebemis/feather) in your angular applications. The icons are designed by Cole Bemis.
+Import only the icons that you need.
 
-Import only the icons that you need :)
-
-<h3>
+### Demo
+<h4>
   <a href="https://stackblitz.com/edit/angular-feather?file=app%2Fapp.component.html">
-    Live Demo
+    >> See live demo <<
   </a>
-</h3>
+</h4>
 
 ### Usage
 
@@ -24,34 +24,76 @@ _1. Install the package_
 ```sh
 npm install angular-feather
 ```
+
+_2. Generate a module to host the icons you'll import_
+ 
+```sh
+ng generate module icons
+```
   
-_2. Import the icons you need_
+_3. Import only the components you need_
   
-Import the icons _a la carte_. Keep consistency by defining an `IconsModule`. As this angular module doesn't use the icons, it only uses the `exports` array property to export the icons your feature module need. Therefore you deal only with the aggregation `IconsModule` when you need to import icons in feature modules.
+Declare the icons that your application depends on in _IconsModule_, and export them so that the consumer of _IconsModule_ has access to them.
 
 ```ts  
 import { NgModule } from '@angular/core';
+import { IconCamera, IconHeart, IconGithub } from 'angular-feather';
 
-import { IconLogIn, IconLogOut, IconUser } from 'angular-feather';
+const icons = [
+  IconCamera,
+  IconHeart,
+  IconGithub
+];
 
 @NgModule({
-  exports: [
-    IconLogIn,
-    IconLogOut,
-    IconUser
-  ]
+  declarations: icons,
+  exports: icons
 })
 export class IconsModule { }
 ```
 
+Note: _declarations_ is necessary as per angular-feather 5.0.0
+
 _3. Use it in template_
 
+After importing the _IconsModule_ where appropriate, use the icons.
+
 ```html
-<i-log-in></i-log-in>
-<i-log-out></i-log-out>
-<i-user></i-user>
+<i-camera></i-camera>
+<i-heart></i-heart>
+<i-github></i-github>
 ```
-    
+
+
+
+### Styling icons
+
+As per angular-feather 5.0.0, the icon components are exposing CSS custom properties for styling purpose. The following properties are exposed:
+
+| CSS Custom Property | Default |
+| ------------------- | ------- |
+| --width | 24px |
+| --height | 24px |
+| --fill | none |
+| --stroke | currentColor |
+| --stroke-width | 2px |
+| --stroke-linecap | round |
+| --stroke-linejoin | round |
+
+For example, to make icons bigger you can define a class defining the `--height` and `--width` properties.
+
+```css
+.big {
+  --height: 50px;
+  --width: 50px;
+}
+```
+```html
+<icon-heart class="big"></icon-heart>
+```
+
+### Available icons
+
 Refer to the table below for the list of all available icons.
 
 |     | Symbol to import | Component selector |
