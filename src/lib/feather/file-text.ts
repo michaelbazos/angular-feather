@@ -3,16 +3,19 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'i-file-text',
   styles: [`
-    .feather {
-      width: var(--width, 24px);
-      height: var(--height, 24px);
-      fill: var(--fill, none);
-      stroke: var(--stroke, currentColor);
-      stroke-width: var(--stroke-width, 2px);
-      stroke-linecap: var(--stroke-linecap, round);
-      stroke-linejoin: var(--stroke-linejoin, round);
+    :host {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2px;
+      stroke-linecap: round;
+      stroke-linejoin: round;
     }
   `],
-  templateUrl: '../../../node_modules/feather-icons/dist/icons/file-text.svg'
+  template: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-file-text">
+    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline>
+  </svg>`
 })
 export class IconFileText {}

@@ -3,16 +3,19 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'i-tag',
   styles: [`
-    .feather {
-      width: var(--width, 24px);
-      height: var(--height, 24px);
-      fill: var(--fill, none);
-      stroke: var(--stroke, currentColor);
-      stroke-width: var(--stroke-width, 2px);
-      stroke-linecap: var(--stroke-linecap, round);
-      stroke-linejoin: var(--stroke-linejoin, round);
+    :host {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2px;
+      stroke-linecap: round;
+      stroke-linejoin: round;
     }
   `],
-  templateUrl: '../../../node_modules/feather-icons/dist/icons/tag.svg'
+  template: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-tag">
+    <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line>
+  </svg>`
 })
 export class IconTag {}

@@ -3,16 +3,19 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'i-battery',
   styles: [`
-    .feather {
-      width: var(--width, 24px);
-      height: var(--height, 24px);
-      fill: var(--fill, none);
-      stroke: var(--stroke, currentColor);
-      stroke-width: var(--stroke-width, 2px);
-      stroke-linecap: var(--stroke-linecap, round);
-      stroke-linejoin: var(--stroke-linejoin, round);
+    :host {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2px;
+      stroke-linecap: round;
+      stroke-linejoin: round;
     }
   `],
-  templateUrl: '../../../node_modules/feather-icons/dist/icons/battery.svg'
+  template: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-battery">
+    <rect x="1" y="6" width="18" height="12" rx="2" ry="2"></rect><line x1="23" y1="13" x2="23" y2="11"></line>
+  </svg>`
 })
 export class IconBattery {}

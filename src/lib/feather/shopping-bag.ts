@@ -3,16 +3,19 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'i-shopping-bag',
   styles: [`
-    .feather {
-      width: var(--width, 24px);
-      height: var(--height, 24px);
-      fill: var(--fill, none);
-      stroke: var(--stroke, currentColor);
-      stroke-width: var(--stroke-width, 2px);
-      stroke-linecap: var(--stroke-linecap, round);
-      stroke-linejoin: var(--stroke-linejoin, round);
+    :host {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2px;
+      stroke-linecap: round;
+      stroke-linejoin: round;
     }
   `],
-  templateUrl: '../../../node_modules/feather-icons/dist/icons/shopping-bag.svg'
+  template: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-shopping-bag">
+    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path>
+  </svg>`
 })
 export class IconShoppingBag {}

@@ -3,16 +3,19 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'i-folder-minus',
   styles: [`
-    .feather {
-      width: var(--width, 24px);
-      height: var(--height, 24px);
-      fill: var(--fill, none);
-      stroke: var(--stroke, currentColor);
-      stroke-width: var(--stroke-width, 2px);
-      stroke-linecap: var(--stroke-linecap, round);
-      stroke-linejoin: var(--stroke-linejoin, round);
+    :host {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2px;
+      stroke-linecap: round;
+      stroke-linejoin: round;
     }
   `],
-  templateUrl: '../../../node_modules/feather-icons/dist/icons/folder-minus.svg'
+  template: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-folder-minus">
+    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path><line x1="9" y1="14" x2="15" y2="14"></line>
+  </svg>`
 })
 export class IconFolderMinus {}
