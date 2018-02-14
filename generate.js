@@ -20,8 +20,12 @@ return Promise.resolve()
       const name = stripExtension(filename);
       const componentName = `Icon${uppercamelcase(name)}`;
 
+      const markup = fs.readFileSync(`${iconsSrcFolder}/${filename}`);
+      const payload = String(markup).match(/^<svg[^>]+?>(.+)<\/svg>$/);
+
       let output = componentTemplate
         .replace(/__NAME__/g, name)
+        .replace(/__PAYLOAD__/, payload[1])
         .replace(/__COMPONENT_NAME__/g, componentName);
 
       fs.writeFileSync(`${iconsDestFolder}/${name}.ts`, output, 'utf-8');
