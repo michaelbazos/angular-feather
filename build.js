@@ -7,7 +7,6 @@ const deleteFolders = require('del');
 const fs = require('fs-extra');
 const merge = require('lodash.merge');
 
-const inlineResources = require('angular-inline-resources');
 const ngc = require('@angular/compiler-cli/src/main').main;
 
 const camelcase = require('camelcase');
@@ -29,10 +28,6 @@ return Promise.resolve()
 
   // Copy sources to tmp folder
   .then(() => fs.copy('src/lib', 'tmp/lib'))
-
-  // Inline angular templates and styleUrls for compilation
-  .then(() => inlineResources('tmp'))
-  .then(() => log('✓ Inline angular sources'))
 
   // Compile to es2015
   .then(() => ngc(['-p', `tmp/lib/tsconfig.json`]))
