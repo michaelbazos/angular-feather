@@ -59,37 +59,30 @@ _3. Use it in template_
 After importing the _IconsModule_ where appropriate, use the icons.
 
 ```html
-<i-camera></i-camera>
 <i-heart></i-heart>
-<i-github></i-github>
+<i-github class="someclass"></i-github>
+<i-camera style="fill: red;"></i-camera>
 ```
 
 
 
 ### Styling icons
 
-As per angular-feather 5.0.0, the icon components are exposing CSS custom properties for styling purpose. The following properties are exposed:
+As per angular-feather 5.1.0, icons can be customised with any CSS property that you can apply on a SVG element.
 
-| CSS Custom Property | Default |
-| ------------------- | ------- |
-| --width | 24px |
-| --height | 24px |
-| --fill | none |
-| --stroke | currentColor |
-| --stroke-width | 2px |
-| --stroke-linecap | round |
-| --stroke-linejoin | round |
-
-For example, to make icons bigger you can define a class defining the `--height` and `--width` properties.
+```html
+<icon-heart class="big fill-red"></icon-heart>
+```
 
 ```css
 .big {
-  --height: 50px;
-  --width: 50px;
+  height: 50px;
+  width: 50px;
 }
-```
-```html
-<icon-heart class="big"></icon-heart>
+
+.fill-red {
+  fill: red;
+}
 ```
 
 ### Available icons
