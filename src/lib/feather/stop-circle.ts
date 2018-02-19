@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgModule } from '@angular/core';
 
 @Component({
   selector: 'i-stop-circle',
@@ -17,5 +18,11 @@ import { Component } from '@angular/core';
   template: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-stop-circle">
     <circle cx="12" cy="12" r="10"></circle><rect x="9" y="9" width="6" height="6"></rect>
   </svg>`
+})
+export class IconStopCircleComponent {}
+
+@NgModule({
+  declarations: [ IconStopCircleComponent ],
+  exports: [ IconStopCircleComponent ]
 })
 export class IconStopCircle {}

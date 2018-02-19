@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgModule } from '@angular/core';
 
 @Component({
   selector: 'i-minus',
@@ -17,5 +18,11 @@ import { Component } from '@angular/core';
   template: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-minus">
     <line x1="5" y1="12" x2="19" y2="12"></line>
   </svg>`
+})
+export class IconMinusComponent {}
+
+@NgModule({
+  declarations: [ IconMinusComponent ],
+  exports: [ IconMinusComponent ]
 })
 export class IconMinus {}

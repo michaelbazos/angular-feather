@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgModule } from '@angular/core';
 
 @Component({
   selector: 'i-check',
@@ -17,5 +18,11 @@ import { Component } from '@angular/core';
   template: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-check">
     <polyline points="20 6 9 17 4 12"></polyline>
   </svg>`
+})
+export class IconCheckComponent {}
+
+@NgModule({
+  declarations: [ IconCheckComponent ],
+  exports: [ IconCheckComponent ]
 })
 export class IconCheck {}

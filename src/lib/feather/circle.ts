@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgModule } from '@angular/core';
 
 @Component({
   selector: 'i-circle',
@@ -17,5 +18,11 @@ import { Component } from '@angular/core';
   template: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-circle">
     <circle cx="12" cy="12" r="10"></circle>
   </svg>`
+})
+export class IconCircleComponent {}
+
+@NgModule({
+  declarations: [ IconCircleComponent ],
+  exports: [ IconCircleComponent ]
 })
 export class IconCircle {}

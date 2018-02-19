@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgModule } from '@angular/core';
 
 @Component({
   selector: 'i-align-left',
@@ -17,5 +18,11 @@ import { Component } from '@angular/core';
   template: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-align-left">
     <line x1="17" y1="10" x2="3" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="17" y1="18" x2="3" y2="18"></line>
   </svg>`
+})
+export class IconAlignLeftComponent {}
+
+@NgModule({
+  declarations: [ IconAlignLeftComponent ],
+  exports: [ IconAlignLeftComponent ]
 })
 export class IconAlignLeft {}

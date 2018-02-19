@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgModule } from '@angular/core';
 
 @Component({
   selector: 'i-toggle-left',
@@ -17,5 +18,11 @@ import { Component } from '@angular/core';
   template: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-toggle-left">
     <rect x="1" y="5" width="22" height="14" rx="7" ry="7"></rect><circle cx="8" cy="12" r="3"></circle>
   </svg>`
+})
+export class IconToggleLeftComponent {}
+
+@NgModule({
+  declarations: [ IconToggleLeftComponent ],
+  exports: [ IconToggleLeftComponent ]
 })
 export class IconToggleLeft {}

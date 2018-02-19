@@ -46,13 +46,10 @@ const icons = [
 ];
 
 @NgModule({
-  declarations: icons,
   exports: icons
 })
 export class IconsModule { }
 ```
-
-Note: _declarations_ is necessary as per angular-feather 5.0.0
 
 _3. Use it in template_
 

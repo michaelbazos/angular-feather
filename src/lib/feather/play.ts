@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgModule } from '@angular/core';
 
 @Component({
   selector: 'i-play',
@@ -17,5 +18,11 @@ import { Component } from '@angular/core';
   template: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-play">
     <polygon points="5 3 19 12 5 21 5 3"></polygon>
   </svg>`
+})
+export class IconPlayComponent {}
+
+@NgModule({
+  declarations: [ IconPlayComponent ],
+  exports: [ IconPlayComponent ]
 })
 export class IconPlay {}

@@ -32,9 +32,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "@angular/compiler": "^5.2.4",
-    "@angular/compiler-cli": "^5.2.4",
-    "@angular/core": "^5.2.4",
+    "@angular/compiler": "^5.2.5",
+    "@angular/compiler-cli": "^5.2.5",
+    "@angular/core": "^5.2.5",
     "camelcase": "^4.1.0",
     "cpy": "^6.0.0",
     "del": "^3.0.0",

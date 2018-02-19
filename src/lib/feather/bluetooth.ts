@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgModule } from '@angular/core';
 
 @Component({
   selector: 'i-bluetooth',
@@ -17,5 +18,11 @@ import { Component } from '@angular/core';
   template: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-bluetooth">
     <polyline points="6.5 6.5 17.5 17.5 12 23 12 1 17.5 6.5 6.5 17.5"></polyline>
   </svg>`
+})
+export class IconBluetoothComponent {}
+
+@NgModule({
+  declarations: [ IconBluetoothComponent ],
+  exports: [ IconBluetoothComponent ]
 })
 export class IconBluetooth {}

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgModule } from '@angular/core';
 
 @Component({
   selector: 'i-chevrons-left',
@@ -17,5 +18,11 @@ import { Component } from '@angular/core';
   template: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="feather feather-chevrons-left">
     <polyline points="11 17 6 12 11 7"></polyline><polyline points="18 17 13 12 18 7"></polyline>
   </svg>`
+})
+export class IconChevronsLeftComponent {}
+
+@NgModule({
+  declarations: [ IconChevronsLeftComponent ],
+  exports: [ IconChevronsLeftComponent ]
 })
 export class IconChevronsLeft {}
