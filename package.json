@@ -28,7 +28,7 @@
     "npm": ">= 3.0.0"
   },
   "scripts": {
-    "build": "node build.js",
+    "build": "ng-packagr -p package.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
@@ -40,6 +40,7 @@
     "del": "^3.0.0",
     "fs-extra": "^5.0.0",
     "lodash.merge": "^4.6.1",
+    "ng-packagr": "^3.0.6",
     "rollup": "^0.55.5",
     "rollup-plugin-sourcemaps": "^0.4.2",
     "rollup-plugin-uglify": "^3.0.0",
@@ -51,5 +52,11 @@
   },
   "dependencies": {
     "feather-icons": "4.5.0"
+  },
+  "ngPackage": {
+    "lib": {
+      "entryFile": "src/lib/index.ts"
+    },
+    "whitelistedNonPeerDependencies": ["feather-icons"]
   }
 }
