@@ -68,7 +68,7 @@ After importing the _IconsModule_ where appropriate, use the icons.
 As per angular-feather 5.1.0, icons can be customised with any CSS property that you can apply on a SVG element.
 
 ```html
-<icon-heart class="big fill-red"></icon-heart>
+<i-heart class="big fill-red"></i-heart>
 ```
 
 ```css
