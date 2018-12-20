@@ -12,7 +12,7 @@ Import only the icons that you need.
 
 ### Demo
 <h4>
-  <a href="https://stackblitz.com/edit/angular-feather?file=app%2Fapp.component.html">
+  <a href="https://stackblitz.com/edit/angular-feather?file=src%2Fapp%2Fapp.component.html">
     >> See live demo <<
   </a>
 </h4>
