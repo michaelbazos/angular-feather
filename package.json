@@ -44,7 +44,7 @@
     "zone.js": "~0.8.26"
   },
   "dependencies": {
-    "feather-icons": "4.5.0"
+    "feather-icons": "4.9.0"
   },
   "ngPackage": {
     "lib": {
