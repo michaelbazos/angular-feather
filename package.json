@@ -29,7 +29,7 @@
   },
   "scripts": {
     "build": "ng-packagr -p package.json",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "publish": "npm publish dist"
   },
   "devDependencies": {
     "@angular/compiler": "^7.1.4",
