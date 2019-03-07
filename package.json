@@ -1,6 +1,6 @@
 {
   "name": "angular-feather",
-  "version": "5.3.1",
+  "version": "5.4.0",
   "description": "Feather Icons components library for your Angular Applications",
   "repository": {
     "type": "git",
@@ -44,7 +44,7 @@
     "zone.js": "~0.8.26"
   },
   "dependencies": {
-    "feather-icons": "4.9.0"
+    "feather-icons": "4.19.0"
   },
   "ngPackage": {
     "lib": {
