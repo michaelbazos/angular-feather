@@ -8,7 +8,8 @@ const iconListFile = 'LIST.md';
 
 const version = require('./package.json').dependencies['feather-icons'];
 
-const rawgitUrl = `https://cdn.rawgit.com/feathericons/feather/v${version}/icons`;
+// const rawgitUrl = `https://cdn.rawgit.com/feathericons/feather/v${version}/icons`;
+const unpkgUrl = `https://unpkg.com/feather-icons@${version}/dist/icons`
 
 
 return Promise.resolve()
@@ -24,7 +25,7 @@ return Promise.resolve()
         const name = stripExtension(filename);
         const moduleName = `Icon${uppercamelcase(name)}`;
 
-        const svgUrl = `${rawgitUrl}/${filename}`;
+        const svgUrl = `${unpkgUrl}/${filename}`;
 
         fs.appendFileSync(
           iconListFile,
