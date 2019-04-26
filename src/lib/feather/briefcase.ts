@@ -23,6 +23,7 @@ export class IconBriefcaseComponent {}
 
 @NgModule({
   declarations: [ IconBriefcaseComponent ],
+  entryComponents: [ IconBriefcaseComponent ],
   exports: [ IconBriefcaseComponent ]
 })
 export class IconBriefcase {}

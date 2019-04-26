@@ -23,6 +23,7 @@ export class IconFilterComponent {}
 
 @NgModule({
   declarations: [ IconFilterComponent ],
+  entryComponents: [ IconFilterComponent ],
   exports: [ IconFilterComponent ]
 })
 export class IconFilter {}

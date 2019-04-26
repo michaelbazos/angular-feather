@@ -23,6 +23,7 @@ export class IconTerminalComponent {}
 
 @NgModule({
   declarations: [ IconTerminalComponent ],
+  entryComponents: [ IconTerminalComponent ],
   exports: [ IconTerminalComponent ]
 })
 export class IconTerminal {}

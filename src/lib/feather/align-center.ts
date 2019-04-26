@@ -23,6 +23,7 @@ export class IconAlignCenterComponent {}
 
 @NgModule({
   declarations: [ IconAlignCenterComponent ],
+  entryComponents: [ IconAlignCenterComponent ],
   exports: [ IconAlignCenterComponent ]
 })
 export class IconAlignCenter {}

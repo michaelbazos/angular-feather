@@ -23,6 +23,7 @@ export class IconShare2Component {}
 
 @NgModule({
   declarations: [ IconShare2Component ],
+  entryComponents: [ IconShare2Component ],
   exports: [ IconShare2Component ]
 })
 export class IconShare2 {}

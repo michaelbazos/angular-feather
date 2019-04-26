@@ -23,6 +23,7 @@ export class IconVideoOffComponent {}
 
 @NgModule({
   declarations: [ IconVideoOffComponent ],
+  entryComponents: [ IconVideoOffComponent ],
   exports: [ IconVideoOffComponent ]
 })
 export class IconVideoOff {}

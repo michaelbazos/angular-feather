@@ -23,6 +23,7 @@ export class IconRefreshCwComponent {}
 
 @NgModule({
   declarations: [ IconRefreshCwComponent ],
+  entryComponents: [ IconRefreshCwComponent ],
   exports: [ IconRefreshCwComponent ]
 })
 export class IconRefreshCw {}

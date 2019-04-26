@@ -23,6 +23,7 @@ export class IconLoaderComponent {}
 
 @NgModule({
   declarations: [ IconLoaderComponent ],
+  entryComponents: [ IconLoaderComponent ],
   exports: [ IconLoaderComponent ]
 })
 export class IconLoader {}

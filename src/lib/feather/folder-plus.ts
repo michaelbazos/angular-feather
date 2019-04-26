@@ -23,6 +23,7 @@ export class IconFolderPlusComponent {}
 
 @NgModule({
   declarations: [ IconFolderPlusComponent ],
+  entryComponents: [ IconFolderPlusComponent ],
   exports: [ IconFolderPlusComponent ]
 })
 export class IconFolderPlus {}

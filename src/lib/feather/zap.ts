@@ -23,6 +23,7 @@ export class IconZapComponent {}
 
 @NgModule({
   declarations: [ IconZapComponent ],
+  entryComponents: [ IconZapComponent ],
   exports: [ IconZapComponent ]
 })
 export class IconZap {}

@@ -23,6 +23,7 @@ export class IconSpeakerComponent {}
 
 @NgModule({
   declarations: [ IconSpeakerComponent ],
+  entryComponents: [ IconSpeakerComponent ],
   exports: [ IconSpeakerComponent ]
 })
 export class IconSpeaker {}

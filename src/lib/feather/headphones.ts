@@ -23,6 +23,7 @@ export class IconHeadphonesComponent {}
 
 @NgModule({
   declarations: [ IconHeadphonesComponent ],
+  entryComponents: [ IconHeadphonesComponent ],
   exports: [ IconHeadphonesComponent ]
 })
 export class IconHeadphones {}

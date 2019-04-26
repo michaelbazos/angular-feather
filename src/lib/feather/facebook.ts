@@ -23,6 +23,7 @@ export class IconFacebookComponent {}
 
 @NgModule({
   declarations: [ IconFacebookComponent ],
+  entryComponents: [ IconFacebookComponent ],
   exports: [ IconFacebookComponent ]
 })
 export class IconFacebook {}

@@ -23,6 +23,7 @@ export class IconAlignLeftComponent {}
 
 @NgModule({
   declarations: [ IconAlignLeftComponent ],
+  entryComponents: [ IconAlignLeftComponent ],
   exports: [ IconAlignLeftComponent ]
 })
 export class IconAlignLeft {}

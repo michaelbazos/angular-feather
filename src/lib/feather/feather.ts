@@ -23,6 +23,7 @@ export class IconFeatherComponent {}
 
 @NgModule({
   declarations: [ IconFeatherComponent ],
+  entryComponents: [ IconFeatherComponent ],
   exports: [ IconFeatherComponent ]
 })
 export class IconFeather {}

@@ -23,6 +23,7 @@ export class IconActivityComponent {}
 
 @NgModule({
   declarations: [ IconActivityComponent ],
+  entryComponents: [ IconActivityComponent ],
   exports: [ IconActivityComponent ]
 })
 export class IconActivity {}

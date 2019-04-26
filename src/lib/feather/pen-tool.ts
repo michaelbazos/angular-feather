@@ -23,6 +23,7 @@ export class IconPenToolComponent {}
 
 @NgModule({
   declarations: [ IconPenToolComponent ],
+  entryComponents: [ IconPenToolComponent ],
   exports: [ IconPenToolComponent ]
 })
 export class IconPenTool {}

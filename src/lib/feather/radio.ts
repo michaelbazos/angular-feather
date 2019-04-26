@@ -23,6 +23,7 @@ export class IconRadioComponent {}
 
 @NgModule({
   declarations: [ IconRadioComponent ],
+  entryComponents: [ IconRadioComponent ],
   exports: [ IconRadioComponent ]
 })
 export class IconRadio {}

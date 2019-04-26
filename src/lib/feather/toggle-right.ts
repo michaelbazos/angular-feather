@@ -23,6 +23,7 @@ export class IconToggleRightComponent {}
 
 @NgModule({
   declarations: [ IconToggleRightComponent ],
+  entryComponents: [ IconToggleRightComponent ],
   exports: [ IconToggleRightComponent ]
 })
 export class IconToggleRight {}

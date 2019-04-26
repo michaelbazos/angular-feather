@@ -23,6 +23,7 @@ export class IconUnderlineComponent {}
 
 @NgModule({
   declarations: [ IconUnderlineComponent ],
+  entryComponents: [ IconUnderlineComponent ],
   exports: [ IconUnderlineComponent ]
 })
 export class IconUnderline {}

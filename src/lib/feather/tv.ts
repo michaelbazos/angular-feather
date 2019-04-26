@@ -23,6 +23,7 @@ export class IconTvComponent {}
 
 @NgModule({
   declarations: [ IconTvComponent ],
+  entryComponents: [ IconTvComponent ],
   exports: [ IconTvComponent ]
 })
 export class IconTv {}

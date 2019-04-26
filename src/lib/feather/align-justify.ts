@@ -23,6 +23,7 @@ export class IconAlignJustifyComponent {}
 
 @NgModule({
   declarations: [ IconAlignJustifyComponent ],
+  entryComponents: [ IconAlignJustifyComponent ],
   exports: [ IconAlignJustifyComponent ]
 })
 export class IconAlignJustify {}

@@ -23,6 +23,7 @@ export class IconMehComponent {}
 
 @NgModule({
   declarations: [ IconMehComponent ],
+  entryComponents: [ IconMehComponent ],
   exports: [ IconMehComponent ]
 })
 export class IconMeh {}

@@ -23,6 +23,7 @@ export class IconAirplayComponent {}
 
 @NgModule({
   declarations: [ IconAirplayComponent ],
+  entryComponents: [ IconAirplayComponent ],
   exports: [ IconAirplayComponent ]
 })
 export class IconAirplay {}

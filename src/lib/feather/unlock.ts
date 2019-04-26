@@ -23,6 +23,7 @@ export class IconUnlockComponent {}
 
 @NgModule({
   declarations: [ IconUnlockComponent ],
+  entryComponents: [ IconUnlockComponent ],
   exports: [ IconUnlockComponent ]
 })
 export class IconUnlock {}

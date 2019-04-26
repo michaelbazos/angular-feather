@@ -23,6 +23,7 @@ export class IconThumbsDownComponent {}
 
 @NgModule({
   declarations: [ IconThumbsDownComponent ],
+  entryComponents: [ IconThumbsDownComponent ],
   exports: [ IconThumbsDownComponent ]
 })
 export class IconThumbsDown {}

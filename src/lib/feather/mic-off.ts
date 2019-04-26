@@ -23,6 +23,7 @@ export class IconMicOffComponent {}
 
 @NgModule({
   declarations: [ IconMicOffComponent ],
+  entryComponents: [ IconMicOffComponent ],
   exports: [ IconMicOffComponent ]
 })
 export class IconMicOff {}

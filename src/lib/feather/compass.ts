@@ -23,6 +23,7 @@ export class IconCompassComponent {}
 
 @NgModule({
   declarations: [ IconCompassComponent ],
+  entryComponents: [ IconCompassComponent ],
   exports: [ IconCompassComponent ]
 })
 export class IconCompass {}

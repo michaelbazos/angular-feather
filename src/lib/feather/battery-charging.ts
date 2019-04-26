@@ -23,6 +23,7 @@ export class IconBatteryChargingComponent {}
 
 @NgModule({
   declarations: [ IconBatteryChargingComponent ],
+  entryComponents: [ IconBatteryChargingComponent ],
   exports: [ IconBatteryChargingComponent ]
 })
 export class IconBatteryCharging {}

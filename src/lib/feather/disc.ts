@@ -23,6 +23,7 @@ export class IconDiscComponent {}
 
 @NgModule({
   declarations: [ IconDiscComponent ],
+  entryComponents: [ IconDiscComponent ],
   exports: [ IconDiscComponent ]
 })
 export class IconDisc {}

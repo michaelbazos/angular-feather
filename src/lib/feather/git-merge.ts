@@ -23,6 +23,7 @@ export class IconGitMergeComponent {}
 
 @NgModule({
   declarations: [ IconGitMergeComponent ],
+  entryComponents: [ IconGitMergeComponent ],
   exports: [ IconGitMergeComponent ]
 })
 export class IconGitMerge {}

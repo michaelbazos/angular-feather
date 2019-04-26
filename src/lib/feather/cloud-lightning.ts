@@ -23,6 +23,7 @@ export class IconCloudLightningComponent {}
 
 @NgModule({
   declarations: [ IconCloudLightningComponent ],
+  entryComponents: [ IconCloudLightningComponent ],
   exports: [ IconCloudLightningComponent ]
 })
 export class IconCloudLightning {}

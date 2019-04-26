@@ -23,6 +23,7 @@ export class IconHardDriveComponent {}
 
 @NgModule({
   declarations: [ IconHardDriveComponent ],
+  entryComponents: [ IconHardDriveComponent ],
   exports: [ IconHardDriveComponent ]
 })
 export class IconHardDrive {}

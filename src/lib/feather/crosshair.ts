@@ -23,6 +23,7 @@ export class IconCrosshairComponent {}
 
 @NgModule({
   declarations: [ IconCrosshairComponent ],
+  entryComponents: [ IconCrosshairComponent ],
   exports: [ IconCrosshairComponent ]
 })
 export class IconCrosshair {}

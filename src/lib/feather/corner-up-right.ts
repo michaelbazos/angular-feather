@@ -23,6 +23,7 @@ export class IconCornerUpRightComponent {}
 
 @NgModule({
   declarations: [ IconCornerUpRightComponent ],
+  entryComponents: [ IconCornerUpRightComponent ],
   exports: [ IconCornerUpRightComponent ]
 })
 export class IconCornerUpRight {}

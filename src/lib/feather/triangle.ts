@@ -23,6 +23,7 @@ export class IconTriangleComponent {}
 
 @NgModule({
   declarations: [ IconTriangleComponent ],
+  entryComponents: [ IconTriangleComponent ],
   exports: [ IconTriangleComponent ]
 })
 export class IconTriangle {}

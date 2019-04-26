@@ -23,6 +23,7 @@ export class IconCloudOffComponent {}
 
 @NgModule({
   declarations: [ IconCloudOffComponent ],
+  entryComponents: [ IconCloudOffComponent ],
   exports: [ IconCloudOffComponent ]
 })
 export class IconCloudOff {}

@@ -23,6 +23,7 @@ export class IconFlagComponent {}
 
 @NgModule({
   declarations: [ IconFlagComponent ],
+  entryComponents: [ IconFlagComponent ],
   exports: [ IconFlagComponent ]
 })
 export class IconFlag {}

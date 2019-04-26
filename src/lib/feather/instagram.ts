@@ -23,6 +23,7 @@ export class IconInstagramComponent {}
 
 @NgModule({
   declarations: [ IconInstagramComponent ],
+  entryComponents: [ IconInstagramComponent ],
   exports: [ IconInstagramComponent ]
 })
 export class IconInstagram {}

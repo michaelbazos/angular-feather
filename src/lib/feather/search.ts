@@ -23,6 +23,7 @@ export class IconSearchComponent {}
 
 @NgModule({
   declarations: [ IconSearchComponent ],
+  entryComponents: [ IconSearchComponent ],
   exports: [ IconSearchComponent ]
 })
 export class IconSearch {}

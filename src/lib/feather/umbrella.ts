@@ -23,6 +23,7 @@ export class IconUmbrellaComponent {}
 
 @NgModule({
   declarations: [ IconUmbrellaComponent ],
+  entryComponents: [ IconUmbrellaComponent ],
   exports: [ IconUmbrellaComponent ]
 })
 export class IconUmbrella {}

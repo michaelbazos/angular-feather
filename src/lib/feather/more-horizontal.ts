@@ -23,6 +23,7 @@ export class IconMoreHorizontalComponent {}
 
 @NgModule({
   declarations: [ IconMoreHorizontalComponent ],
+  entryComponents: [ IconMoreHorizontalComponent ],
   exports: [ IconMoreHorizontalComponent ]
 })
 export class IconMoreHorizontal {}

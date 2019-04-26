@@ -23,6 +23,7 @@ export class IconNavigation2Component {}
 
 @NgModule({
   declarations: [ IconNavigation2Component ],
+  entryComponents: [ IconNavigation2Component ],
   exports: [ IconNavigation2Component ]
 })
 export class IconNavigation2 {}

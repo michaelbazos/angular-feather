@@ -23,6 +23,7 @@ export class IconStopCircleComponent {}
 
 @NgModule({
   declarations: [ IconStopCircleComponent ],
+  entryComponents: [ IconStopCircleComponent ],
   exports: [ IconStopCircleComponent ]
 })
 export class IconStopCircle {}

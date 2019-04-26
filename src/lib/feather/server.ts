@@ -23,6 +23,7 @@ export class IconServerComponent {}
 
 @NgModule({
   declarations: [ IconServerComponent ],
+  entryComponents: [ IconServerComponent ],
   exports: [ IconServerComponent ]
 })
 export class IconServer {}

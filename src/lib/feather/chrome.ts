@@ -23,6 +23,7 @@ export class IconChromeComponent {}
 
 @NgModule({
   declarations: [ IconChromeComponent ],
+  entryComponents: [ IconChromeComponent ],
   exports: [ IconChromeComponent ]
 })
 export class IconChrome {}

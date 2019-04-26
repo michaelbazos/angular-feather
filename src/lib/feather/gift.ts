@@ -23,6 +23,7 @@ export class IconGiftComponent {}
 
 @NgModule({
   declarations: [ IconGiftComponent ],
+  entryComponents: [ IconGiftComponent ],
   exports: [ IconGiftComponent ]
 })
 export class IconGift {}

@@ -23,6 +23,7 @@ export class IconHeartComponent {}
 
 @NgModule({
   declarations: [ IconHeartComponent ],
+  entryComponents: [ IconHeartComponent ],
   exports: [ IconHeartComponent ]
 })
 export class IconHeart {}

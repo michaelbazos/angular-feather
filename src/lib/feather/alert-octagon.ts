@@ -23,6 +23,7 @@ export class IconAlertOctagonComponent {}
 
 @NgModule({
   declarations: [ IconAlertOctagonComponent ],
+  entryComponents: [ IconAlertOctagonComponent ],
   exports: [ IconAlertOctagonComponent ]
 })
 export class IconAlertOctagon {}

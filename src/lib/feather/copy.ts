@@ -23,6 +23,7 @@ export class IconCopyComponent {}
 
 @NgModule({
   declarations: [ IconCopyComponent ],
+  entryComponents: [ IconCopyComponent ],
   exports: [ IconCopyComponent ]
 })
 export class IconCopy {}

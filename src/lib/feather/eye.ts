@@ -23,6 +23,7 @@ export class IconEyeComponent {}
 
 @NgModule({
   declarations: [ IconEyeComponent ],
+  entryComponents: [ IconEyeComponent ],
   exports: [ IconEyeComponent ]
 })
 export class IconEye {}

@@ -23,6 +23,7 @@ export class IconSaveComponent {}
 
 @NgModule({
   declarations: [ IconSaveComponent ],
+  entryComponents: [ IconSaveComponent ],
   exports: [ IconSaveComponent ]
 })
 export class IconSave {}

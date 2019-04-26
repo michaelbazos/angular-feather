@@ -23,6 +23,7 @@ export class IconWifiOffComponent {}
 
 @NgModule({
   declarations: [ IconWifiOffComponent ],
+  entryComponents: [ IconWifiOffComponent ],
   exports: [ IconWifiOffComponent ]
 })
 export class IconWifiOff {}

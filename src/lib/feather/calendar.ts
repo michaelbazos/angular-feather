@@ -23,6 +23,7 @@ export class IconCalendarComponent {}
 
 @NgModule({
   declarations: [ IconCalendarComponent ],
+  entryComponents: [ IconCalendarComponent ],
   exports: [ IconCalendarComponent ]
 })
 export class IconCalendar {}

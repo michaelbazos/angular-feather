@@ -23,6 +23,7 @@ export class IconWindComponent {}
 
 @NgModule({
   declarations: [ IconWindComponent ],
+  entryComponents: [ IconWindComponent ],
   exports: [ IconWindComponent ]
 })
 export class IconWind {}

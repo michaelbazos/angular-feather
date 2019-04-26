@@ -23,6 +23,7 @@ export class IconCodepenComponent {}
 
 @NgModule({
   declarations: [ IconCodepenComponent ],
+  entryComponents: [ IconCodepenComponent ],
   exports: [ IconCodepenComponent ]
 })
 export class IconCodepen {}

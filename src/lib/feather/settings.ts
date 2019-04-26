@@ -23,6 +23,7 @@ export class IconSettingsComponent {}
 
 @NgModule({
   declarations: [ IconSettingsComponent ],
+  entryComponents: [ IconSettingsComponent ],
   exports: [ IconSettingsComponent ]
 })
 export class IconSettings {}

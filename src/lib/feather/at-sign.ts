@@ -23,6 +23,7 @@ export class IconAtSignComponent {}
 
 @NgModule({
   declarations: [ IconAtSignComponent ],
+  entryComponents: [ IconAtSignComponent ],
   exports: [ IconAtSignComponent ]
 })
 export class IconAtSign {}

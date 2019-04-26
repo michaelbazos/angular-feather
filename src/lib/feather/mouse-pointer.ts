@@ -23,6 +23,7 @@ export class IconMousePointerComponent {}
 
 @NgModule({
   declarations: [ IconMousePointerComponent ],
+  entryComponents: [ IconMousePointerComponent ],
   exports: [ IconMousePointerComponent ]
 })
 export class IconMousePointer {}

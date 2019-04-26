@@ -23,6 +23,7 @@ export class IconUploadComponent {}
 
 @NgModule({
   declarations: [ IconUploadComponent ],
+  entryComponents: [ IconUploadComponent ],
   exports: [ IconUploadComponent ]
 })
 export class IconUpload {}

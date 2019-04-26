@@ -23,6 +23,7 @@ export class IconDatabaseComponent {}
 
 @NgModule({
   declarations: [ IconDatabaseComponent ],
+  entryComponents: [ IconDatabaseComponent ],
   exports: [ IconDatabaseComponent ]
 })
 export class IconDatabase {}

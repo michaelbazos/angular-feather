@@ -23,6 +23,7 @@ export class IconBookmarkComponent {}
 
 @NgModule({
   declarations: [ IconBookmarkComponent ],
+  entryComponents: [ IconBookmarkComponent ],
   exports: [ IconBookmarkComponent ]
 })
 export class IconBookmark {}

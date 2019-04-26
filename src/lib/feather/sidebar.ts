@@ -23,6 +23,7 @@ export class IconSidebarComponent {}
 
 @NgModule({
   declarations: [ IconSidebarComponent ],
+  entryComponents: [ IconSidebarComponent ],
   exports: [ IconSidebarComponent ]
 })
 export class IconSidebar {}

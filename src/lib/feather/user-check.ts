@@ -23,6 +23,7 @@ export class IconUserCheckComponent {}
 
 @NgModule({
   declarations: [ IconUserCheckComponent ],
+  entryComponents: [ IconUserCheckComponent ],
   exports: [ IconUserCheckComponent ]
 })
 export class IconUserCheck {}

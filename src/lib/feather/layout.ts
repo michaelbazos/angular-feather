@@ -23,6 +23,7 @@ export class IconLayoutComponent {}
 
 @NgModule({
   declarations: [ IconLayoutComponent ],
+  entryComponents: [ IconLayoutComponent ],
   exports: [ IconLayoutComponent ]
 })
 export class IconLayout {}

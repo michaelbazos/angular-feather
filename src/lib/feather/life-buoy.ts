@@ -23,6 +23,7 @@ export class IconLifeBuoyComponent {}
 
 @NgModule({
   declarations: [ IconLifeBuoyComponent ],
+  entryComponents: [ IconLifeBuoyComponent ],
   exports: [ IconLifeBuoyComponent ]
 })
 export class IconLifeBuoy {}

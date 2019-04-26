@@ -23,6 +23,7 @@ export class IconLayersComponent {}
 
 @NgModule({
   declarations: [ IconLayersComponent ],
+  entryComponents: [ IconLayersComponent ],
   exports: [ IconLayersComponent ]
 })
 export class IconLayers {}

@@ -23,6 +23,7 @@ export class IconMoreVerticalComponent {}
 
 @NgModule({
   declarations: [ IconMoreVerticalComponent ],
+  entryComponents: [ IconMoreVerticalComponent ],
   exports: [ IconMoreVerticalComponent ]
 })
 export class IconMoreVertical {}

@@ -23,6 +23,7 @@ export class IconZoomOutComponent {}
 
 @NgModule({
   declarations: [ IconZoomOutComponent ],
+  entryComponents: [ IconZoomOutComponent ],
   exports: [ IconZoomOutComponent ]
 })
 export class IconZoomOut {}

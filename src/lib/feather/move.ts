@@ -23,6 +23,7 @@ export class IconMoveComponent {}
 
 @NgModule({
   declarations: [ IconMoveComponent ],
+  entryComponents: [ IconMoveComponent ],
   exports: [ IconMoveComponent ]
 })
 export class IconMove {}

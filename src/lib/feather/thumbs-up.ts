@@ -23,6 +23,7 @@ export class IconThumbsUpComponent {}
 
 @NgModule({
   declarations: [ IconThumbsUpComponent ],
+  entryComponents: [ IconThumbsUpComponent ],
   exports: [ IconThumbsUpComponent ]
 })
 export class IconThumbsUp {}

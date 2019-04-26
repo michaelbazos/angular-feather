@@ -23,6 +23,7 @@ export class IconSlashComponent {}
 
 @NgModule({
   declarations: [ IconSlashComponent ],
+  entryComponents: [ IconSlashComponent ],
   exports: [ IconSlashComponent ]
 })
 export class IconSlash {}

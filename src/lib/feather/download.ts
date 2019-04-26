@@ -23,6 +23,7 @@ export class IconDownloadComponent {}
 
 @NgModule({
   declarations: [ IconDownloadComponent ],
+  entryComponents: [ IconDownloadComponent ],
   exports: [ IconDownloadComponent ]
 })
 export class IconDownload {}

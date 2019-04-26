@@ -23,6 +23,7 @@ export class IconCheckCircleComponent {}
 
 @NgModule({
   declarations: [ IconCheckCircleComponent ],
+  entryComponents: [ IconCheckCircleComponent ],
   exports: [ IconCheckCircleComponent ]
 })
 export class IconCheckCircle {}

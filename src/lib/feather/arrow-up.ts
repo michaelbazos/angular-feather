@@ -23,6 +23,7 @@ export class IconArrowUpComponent {}
 
 @NgModule({
   declarations: [ IconArrowUpComponent ],
+  entryComponents: [ IconArrowUpComponent ],
   exports: [ IconArrowUpComponent ]
 })
 export class IconArrowUp {}

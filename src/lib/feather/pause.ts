@@ -23,6 +23,7 @@ export class IconPauseComponent {}
 
 @NgModule({
   declarations: [ IconPauseComponent ],
+  entryComponents: [ IconPauseComponent ],
   exports: [ IconPauseComponent ]
 })
 export class IconPause {}

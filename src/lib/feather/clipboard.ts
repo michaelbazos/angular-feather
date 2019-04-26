@@ -23,6 +23,7 @@ export class IconClipboardComponent {}
 
 @NgModule({
   declarations: [ IconClipboardComponent ],
+  entryComponents: [ IconClipboardComponent ],
   exports: [ IconClipboardComponent ]
 })
 export class IconClipboard {}

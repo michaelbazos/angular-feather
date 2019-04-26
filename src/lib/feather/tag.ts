@@ -23,6 +23,7 @@ export class IconTagComponent {}
 
 @NgModule({
   declarations: [ IconTagComponent ],
+  entryComponents: [ IconTagComponent ],
   exports: [ IconTagComponent ]
 })
 export class IconTag {}

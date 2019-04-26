@@ -23,6 +23,7 @@ export class IconRewindComponent {}
 
 @NgModule({
   declarations: [ IconRewindComponent ],
+  entryComponents: [ IconRewindComponent ],
   exports: [ IconRewindComponent ]
 })
 export class IconRewind {}

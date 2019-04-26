@@ -23,6 +23,7 @@ export class IconMinimizeComponent {}
 
 @NgModule({
   declarations: [ IconMinimizeComponent ],
+  entryComponents: [ IconMinimizeComponent ],
   exports: [ IconMinimizeComponent ]
 })
 export class IconMinimize {}

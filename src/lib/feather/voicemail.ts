@@ -23,6 +23,7 @@ export class IconVoicemailComponent {}
 
 @NgModule({
   declarations: [ IconVoicemailComponent ],
+  entryComponents: [ IconVoicemailComponent ],
   exports: [ IconVoicemailComponent ]
 })
 export class IconVoicemail {}

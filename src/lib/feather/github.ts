@@ -23,6 +23,7 @@ export class IconGithubComponent {}
 
 @NgModule({
   declarations: [ IconGithubComponent ],
+  entryComponents: [ IconGithubComponent ],
   exports: [ IconGithubComponent ]
 })
 export class IconGithub {}

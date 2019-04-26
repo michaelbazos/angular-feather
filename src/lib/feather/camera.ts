@@ -23,6 +23,7 @@ export class IconCameraComponent {}
 
 @NgModule({
   declarations: [ IconCameraComponent ],
+  entryComponents: [ IconCameraComponent ],
   exports: [ IconCameraComponent ]
 })
 export class IconCamera {}

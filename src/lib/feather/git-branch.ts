@@ -23,6 +23,7 @@ export class IconGitBranchComponent {}
 
 @NgModule({
   declarations: [ IconGitBranchComponent ],
+  entryComponents: [ IconGitBranchComponent ],
   exports: [ IconGitBranchComponent ]
 })
 export class IconGitBranch {}

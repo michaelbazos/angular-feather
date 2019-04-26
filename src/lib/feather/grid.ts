@@ -23,6 +23,7 @@ export class IconGridComponent {}
 
 @NgModule({
   declarations: [ IconGridComponent ],
+  entryComponents: [ IconGridComponent ],
   exports: [ IconGridComponent ]
 })
 export class IconGrid {}

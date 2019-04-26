@@ -23,6 +23,7 @@ export class IconFolderMinusComponent {}
 
 @NgModule({
   declarations: [ IconFolderMinusComponent ],
+  entryComponents: [ IconFolderMinusComponent ],
   exports: [ IconFolderMinusComponent ]
 })
 export class IconFolderMinus {}

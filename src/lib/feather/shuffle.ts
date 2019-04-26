@@ -23,6 +23,7 @@ export class IconShuffleComponent {}
 
 @NgModule({
   declarations: [ IconShuffleComponent ],
+  entryComponents: [ IconShuffleComponent ],
   exports: [ IconShuffleComponent ]
 })
 export class IconShuffle {}

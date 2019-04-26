@@ -23,6 +23,7 @@ export class IconPlayComponent {}
 
 @NgModule({
   declarations: [ IconPlayComponent ],
+  entryComponents: [ IconPlayComponent ],
   exports: [ IconPlayComponent ]
 })
 export class IconPlay {}

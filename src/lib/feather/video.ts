@@ -23,6 +23,7 @@ export class IconVideoComponent {}
 
 @NgModule({
   declarations: [ IconVideoComponent ],
+  entryComponents: [ IconVideoComponent ],
   exports: [ IconVideoComponent ]
 })
 export class IconVideo {}

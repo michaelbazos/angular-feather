@@ -23,6 +23,7 @@ export class IconTruckComponent {}
 
 @NgModule({
   declarations: [ IconTruckComponent ],
+  entryComponents: [ IconTruckComponent ],
   exports: [ IconTruckComponent ]
 })
 export class IconTruck {}

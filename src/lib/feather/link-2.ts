@@ -23,6 +23,7 @@ export class IconLink2Component {}
 
 @NgModule({
   declarations: [ IconLink2Component ],
+  entryComponents: [ IconLink2Component ],
   exports: [ IconLink2Component ]
 })
 export class IconLink2 {}

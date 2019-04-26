@@ -23,6 +23,7 @@ export class IconMessageSquareComponent {}
 
 @NgModule({
   declarations: [ IconMessageSquareComponent ],
+  entryComponents: [ IconMessageSquareComponent ],
   exports: [ IconMessageSquareComponent ]
 })
 export class IconMessageSquare {}

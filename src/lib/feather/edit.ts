@@ -23,6 +23,7 @@ export class IconEditComponent {}
 
 @NgModule({
   declarations: [ IconEditComponent ],
+  entryComponents: [ IconEditComponent ],
   exports: [ IconEditComponent ]
 })
 export class IconEdit {}

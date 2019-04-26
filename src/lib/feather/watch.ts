@@ -23,6 +23,7 @@ export class IconWatchComponent {}
 
 @NgModule({
   declarations: [ IconWatchComponent ],
+  entryComponents: [ IconWatchComponent ],
   exports: [ IconWatchComponent ]
 })
 export class IconWatch {}

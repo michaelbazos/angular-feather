@@ -23,6 +23,7 @@ export class IconYoutubeComponent {}
 
 @NgModule({
   declarations: [ IconYoutubeComponent ],
+  entryComponents: [ IconYoutubeComponent ],
   exports: [ IconYoutubeComponent ]
 })
 export class IconYoutube {}

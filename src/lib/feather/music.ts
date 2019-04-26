@@ -23,6 +23,7 @@ export class IconMusicComponent {}
 
 @NgModule({
   declarations: [ IconMusicComponent ],
+  entryComponents: [ IconMusicComponent ],
   exports: [ IconMusicComponent ]
 })
 export class IconMusic {}

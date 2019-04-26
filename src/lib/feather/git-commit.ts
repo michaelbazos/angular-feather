@@ -23,6 +23,7 @@ export class IconGitCommitComponent {}
 
 @NgModule({
   declarations: [ IconGitCommitComponent ],
+  entryComponents: [ IconGitCommitComponent ],
   exports: [ IconGitCommitComponent ]
 })
 export class IconGitCommit {}

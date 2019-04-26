@@ -23,6 +23,7 @@ export class IconTwitterComponent {}
 
 @NgModule({
   declarations: [ IconTwitterComponent ],
+  entryComponents: [ IconTwitterComponent ],
   exports: [ IconTwitterComponent ]
 })
 export class IconTwitter {}

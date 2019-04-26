@@ -23,6 +23,7 @@ export class IconPrinterComponent {}
 
 @NgModule({
   declarations: [ IconPrinterComponent ],
+  entryComponents: [ IconPrinterComponent ],
   exports: [ IconPrinterComponent ]
 })
 export class IconPrinter {}

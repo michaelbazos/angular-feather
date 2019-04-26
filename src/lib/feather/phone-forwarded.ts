@@ -23,6 +23,7 @@ export class IconPhoneForwardedComponent {}
 
 @NgModule({
   declarations: [ IconPhoneForwardedComponent ],
+  entryComponents: [ IconPhoneForwardedComponent ],
   exports: [ IconPhoneForwardedComponent ]
 })
 export class IconPhoneForwarded {}

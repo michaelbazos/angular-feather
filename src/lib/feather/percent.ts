@@ -23,6 +23,7 @@ export class IconPercentComponent {}
 
 @NgModule({
   declarations: [ IconPercentComponent ],
+  entryComponents: [ IconPercentComponent ],
   exports: [ IconPercentComponent ]
 })
 export class IconPercent {}

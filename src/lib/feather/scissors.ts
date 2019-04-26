@@ -23,6 +23,7 @@ export class IconScissorsComponent {}
 
 @NgModule({
   declarations: [ IconScissorsComponent ],
+  entryComponents: [ IconScissorsComponent ],
   exports: [ IconScissorsComponent ]
 })
 export class IconScissors {}

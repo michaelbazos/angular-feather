@@ -23,6 +23,7 @@ export class IconShoppingBagComponent {}
 
 @NgModule({
   declarations: [ IconShoppingBagComponent ],
+  entryComponents: [ IconShoppingBagComponent ],
   exports: [ IconShoppingBagComponent ]
 })
 export class IconShoppingBag {}

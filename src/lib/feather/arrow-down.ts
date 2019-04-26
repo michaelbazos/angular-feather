@@ -23,6 +23,7 @@ export class IconArrowDownComponent {}
 
 @NgModule({
   declarations: [ IconArrowDownComponent ],
+  entryComponents: [ IconArrowDownComponent ],
   exports: [ IconArrowDownComponent ]
 })
 export class IconArrowDown {}

@@ -23,6 +23,7 @@ export class IconBoxComponent {}
 
 @NgModule({
   declarations: [ IconBoxComponent ],
+  entryComponents: [ IconBoxComponent ],
   exports: [ IconBoxComponent ]
 })
 export class IconBox {}

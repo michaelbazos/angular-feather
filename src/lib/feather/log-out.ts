@@ -23,6 +23,7 @@ export class IconLogOutComponent {}
 
 @NgModule({
   declarations: [ IconLogOutComponent ],
+  entryComponents: [ IconLogOutComponent ],
   exports: [ IconLogOutComponent ]
 })
 export class IconLogOut {}

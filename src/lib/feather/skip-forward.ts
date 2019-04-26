@@ -23,6 +23,7 @@ export class IconSkipForwardComponent {}
 
 @NgModule({
   declarations: [ IconSkipForwardComponent ],
+  entryComponents: [ IconSkipForwardComponent ],
   exports: [ IconSkipForwardComponent ]
 })
 export class IconSkipForward {}

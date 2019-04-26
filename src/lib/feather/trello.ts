@@ -23,6 +23,7 @@ export class IconTrelloComponent {}
 
 @NgModule({
   declarations: [ IconTrelloComponent ],
+  entryComponents: [ IconTrelloComponent ],
   exports: [ IconTrelloComponent ]
 })
 export class IconTrello {}

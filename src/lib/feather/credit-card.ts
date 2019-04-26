@@ -23,6 +23,7 @@ export class IconCreditCardComponent {}
 
 @NgModule({
   declarations: [ IconCreditCardComponent ],
+  entryComponents: [ IconCreditCardComponent ],
   exports: [ IconCreditCardComponent ]
 })
 export class IconCreditCard {}

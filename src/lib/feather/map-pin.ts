@@ -23,6 +23,7 @@ export class IconMapPinComponent {}
 
 @NgModule({
   declarations: [ IconMapPinComponent ],
+  entryComponents: [ IconMapPinComponent ],
   exports: [ IconMapPinComponent ]
 })
 export class IconMapPin {}

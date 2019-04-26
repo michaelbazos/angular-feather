@@ -23,6 +23,7 @@ export class IconShoppingCartComponent {}
 
 @NgModule({
   declarations: [ IconShoppingCartComponent ],
+  entryComponents: [ IconShoppingCartComponent ],
   exports: [ IconShoppingCartComponent ]
 })
 export class IconShoppingCart {}

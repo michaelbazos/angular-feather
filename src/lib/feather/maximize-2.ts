@@ -23,6 +23,7 @@ export class IconMaximize2Component {}
 
 @NgModule({
   declarations: [ IconMaximize2Component ],
+  entryComponents: [ IconMaximize2Component ],
   exports: [ IconMaximize2Component ]
 })
 export class IconMaximize2 {}

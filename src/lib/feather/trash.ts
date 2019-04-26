@@ -23,6 +23,7 @@ export class IconTrashComponent {}
 
 @NgModule({
   declarations: [ IconTrashComponent ],
+  entryComponents: [ IconTrashComponent ],
   exports: [ IconTrashComponent ]
 })
 export class IconTrash {}

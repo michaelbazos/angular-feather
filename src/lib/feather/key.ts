@@ -23,6 +23,7 @@ export class IconKeyComponent {}
 
 @NgModule({
   declarations: [ IconKeyComponent ],
+  entryComponents: [ IconKeyComponent ],
   exports: [ IconKeyComponent ]
 })
 export class IconKey {}

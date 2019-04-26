@@ -23,6 +23,7 @@ export class IconShieldComponent {}
 
 @NgModule({
   declarations: [ IconShieldComponent ],
+  entryComponents: [ IconShieldComponent ],
   exports: [ IconShieldComponent ]
 })
 export class IconShield {}

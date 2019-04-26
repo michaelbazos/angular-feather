@@ -23,6 +23,7 @@ export class IconListComponent {}
 
 @NgModule({
   declarations: [ IconListComponent ],
+  entryComponents: [ IconListComponent ],
   exports: [ IconListComponent ]
 })
 export class IconList {}

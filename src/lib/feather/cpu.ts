@@ -23,6 +23,7 @@ export class IconCpuComponent {}
 
 @NgModule({
   declarations: [ IconCpuComponent ],
+  entryComponents: [ IconCpuComponent ],
   exports: [ IconCpuComponent ]
 })
 export class IconCpu {}

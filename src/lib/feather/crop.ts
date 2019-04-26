@@ -23,6 +23,7 @@ export class IconCropComponent {}
 
 @NgModule({
   declarations: [ IconCropComponent ],
+  entryComponents: [ IconCropComponent ],
   exports: [ IconCropComponent ]
 })
 export class IconCrop {}

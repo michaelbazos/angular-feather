@@ -23,6 +23,7 @@ export class IconShieldOffComponent {}
 
 @NgModule({
   declarations: [ IconShieldOffComponent ],
+  entryComponents: [ IconShieldOffComponent ],
   exports: [ IconShieldOffComponent ]
 })
 export class IconShieldOff {}

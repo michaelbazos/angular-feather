@@ -23,6 +23,7 @@ export class IconCastComponent {}
 
 @NgModule({
   declarations: [ IconCastComponent ],
+  entryComponents: [ IconCastComponent ],
   exports: [ IconCastComponent ]
 })
 export class IconCast {}

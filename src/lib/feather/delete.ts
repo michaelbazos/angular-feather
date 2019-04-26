@@ -23,6 +23,7 @@ export class IconDeleteComponent {}
 
 @NgModule({
   declarations: [ IconDeleteComponent ],
+  entryComponents: [ IconDeleteComponent ],
   exports: [ IconDeleteComponent ]
 })
 export class IconDelete {}

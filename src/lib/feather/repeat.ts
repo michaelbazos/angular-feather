@@ -23,6 +23,7 @@ export class IconRepeatComponent {}
 
 @NgModule({
   declarations: [ IconRepeatComponent ],
+  entryComponents: [ IconRepeatComponent ],
   exports: [ IconRepeatComponent ]
 })
 export class IconRepeat {}

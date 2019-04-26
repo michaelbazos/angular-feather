@@ -23,6 +23,7 @@ export class IconApertureComponent {}
 
 @NgModule({
   declarations: [ IconApertureComponent ],
+  entryComponents: [ IconApertureComponent ],
   exports: [ IconApertureComponent ]
 })
 export class IconAperture {}

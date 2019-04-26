@@ -23,6 +23,7 @@ export class IconClockComponent {}
 
 @NgModule({
   declarations: [ IconClockComponent ],
+  entryComponents: [ IconClockComponent ],
   exports: [ IconClockComponent ]
 })
 export class IconClock {}

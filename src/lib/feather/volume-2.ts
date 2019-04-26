@@ -23,6 +23,7 @@ export class IconVolume2Component {}
 
 @NgModule({
   declarations: [ IconVolume2Component ],
+  entryComponents: [ IconVolume2Component ],
   exports: [ IconVolume2Component ]
 })
 export class IconVolume2 {}

@@ -23,6 +23,7 @@ export class IconRssComponent {}
 
 @NgModule({
   declarations: [ IconRssComponent ],
+  entryComponents: [ IconRssComponent ],
   exports: [ IconRssComponent ]
 })
 export class IconRss {}

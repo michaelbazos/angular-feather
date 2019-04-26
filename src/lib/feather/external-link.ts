@@ -23,6 +23,7 @@ export class IconExternalLinkComponent {}
 
 @NgModule({
   declarations: [ IconExternalLinkComponent ],
+  entryComponents: [ IconExternalLinkComponent ],
   exports: [ IconExternalLinkComponent ]
 })
 export class IconExternalLink {}

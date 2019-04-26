@@ -23,6 +23,7 @@ export class IconThermometerComponent {}
 
 @NgModule({
   declarations: [ IconThermometerComponent ],
+  entryComponents: [ IconThermometerComponent ],
   exports: [ IconThermometerComponent ]
 })
 export class IconThermometer {}

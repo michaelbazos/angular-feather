@@ -23,6 +23,7 @@ export class IconDollarSignComponent {}
 
 @NgModule({
   declarations: [ IconDollarSignComponent ],
+  entryComponents: [ IconDollarSignComponent ],
   exports: [ IconDollarSignComponent ]
 })
 export class IconDollarSign {}

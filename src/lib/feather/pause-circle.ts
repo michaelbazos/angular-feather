@@ -23,6 +23,7 @@ export class IconPauseCircleComponent {}
 
 @NgModule({
   declarations: [ IconPauseCircleComponent ],
+  entryComponents: [ IconPauseCircleComponent ],
   exports: [ IconPauseCircleComponent ]
 })
 export class IconPauseCircle {}

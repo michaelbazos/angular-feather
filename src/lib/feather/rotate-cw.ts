@@ -23,6 +23,7 @@ export class IconRotateCwComponent {}
 
 @NgModule({
   declarations: [ IconRotateCwComponent ],
+  entryComponents: [ IconRotateCwComponent ],
   exports: [ IconRotateCwComponent ]
 })
 export class IconRotateCw {}

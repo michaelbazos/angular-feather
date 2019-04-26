@@ -23,6 +23,7 @@ export class IconPowerComponent {}
 
 @NgModule({
   declarations: [ IconPowerComponent ],
+  entryComponents: [ IconPowerComponent ],
   exports: [ IconPowerComponent ]
 })
 export class IconPower {}

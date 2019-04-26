@@ -23,6 +23,7 @@ export class IconPieChartComponent {}
 
 @NgModule({
   declarations: [ IconPieChartComponent ],
+  entryComponents: [ IconPieChartComponent ],
   exports: [ IconPieChartComponent ]
 })
 export class IconPieChart {}

@@ -23,6 +23,7 @@ export class IconHashComponent {}
 
 @NgModule({
   declarations: [ IconHashComponent ],
+  entryComponents: [ IconHashComponent ],
   exports: [ IconHashComponent ]
 })
 export class IconHash {}

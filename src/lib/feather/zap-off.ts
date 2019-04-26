@@ -23,6 +23,7 @@ export class IconZapOffComponent {}
 
 @NgModule({
   declarations: [ IconZapOffComponent ],
+  entryComponents: [ IconZapOffComponent ],
   exports: [ IconZapOffComponent ]
 })
 export class IconZapOff {}

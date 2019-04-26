@@ -23,6 +23,7 @@ export class IconHomeComponent {}
 
 @NgModule({
   declarations: [ IconHomeComponent ],
+  entryComponents: [ IconHomeComponent ],
   exports: [ IconHomeComponent ]
 })
 export class IconHome {}

@@ -23,6 +23,7 @@ export class IconPaperclipComponent {}
 
 @NgModule({
   declarations: [ IconPaperclipComponent ],
+  entryComponents: [ IconPaperclipComponent ],
   exports: [ IconPaperclipComponent ]
 })
 export class IconPaperclip {}

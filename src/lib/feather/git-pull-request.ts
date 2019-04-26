@@ -23,6 +23,7 @@ export class IconGitPullRequestComponent {}
 
 @NgModule({
   declarations: [ IconGitPullRequestComponent ],
+  entryComponents: [ IconGitPullRequestComponent ],
   exports: [ IconGitPullRequestComponent ]
 })
 export class IconGitPullRequest {}

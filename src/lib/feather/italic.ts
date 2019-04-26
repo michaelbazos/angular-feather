@@ -23,6 +23,7 @@ export class IconItalicComponent {}
 
 @NgModule({
   declarations: [ IconItalicComponent ],
+  entryComponents: [ IconItalicComponent ],
   exports: [ IconItalicComponent ]
 })
 export class IconItalic {}

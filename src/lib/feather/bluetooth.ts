@@ -23,6 +23,7 @@ export class IconBluetoothComponent {}
 
 @NgModule({
   declarations: [ IconBluetoothComponent ],
+  entryComponents: [ IconBluetoothComponent ],
   exports: [ IconBluetoothComponent ]
 })
 export class IconBluetooth {}

@@ -23,6 +23,7 @@ export class IconTrendingUpComponent {}
 
 @NgModule({
   declarations: [ IconTrendingUpComponent ],
+  entryComponents: [ IconTrendingUpComponent ],
   exports: [ IconTrendingUpComponent ]
 })
 export class IconTrendingUp {}

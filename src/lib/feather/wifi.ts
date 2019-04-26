@@ -23,6 +23,7 @@ export class IconWifiComponent {}
 
 @NgModule({
   declarations: [ IconWifiComponent ],
+  entryComponents: [ IconWifiComponent ],
   exports: [ IconWifiComponent ]
 })
 export class IconWifi {}

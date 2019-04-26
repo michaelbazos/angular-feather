@@ -23,6 +23,7 @@ export class IconSendComponent {}
 
 @NgModule({
   declarations: [ IconSendComponent ],
+  entryComponents: [ IconSendComponent ],
   exports: [ IconSendComponent ]
 })
 export class IconSend {}

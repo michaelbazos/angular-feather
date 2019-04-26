@@ -23,6 +23,7 @@ export class IconChevronLeftComponent {}
 
 @NgModule({
   declarations: [ IconChevronLeftComponent ],
+  entryComponents: [ IconChevronLeftComponent ],
   exports: [ IconChevronLeftComponent ]
 })
 export class IconChevronLeft {}

@@ -23,6 +23,7 @@ export class IconSlackComponent {}
 
 @NgModule({
   declarations: [ IconSlackComponent ],
+  entryComponents: [ IconSlackComponent ],
   exports: [ IconSlackComponent ]
 })
 export class IconSlack {}

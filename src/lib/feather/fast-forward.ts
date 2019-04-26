@@ -23,6 +23,7 @@ export class IconFastForwardComponent {}
 
 @NgModule({
   declarations: [ IconFastForwardComponent ],
+  entryComponents: [ IconFastForwardComponent ],
   exports: [ IconFastForwardComponent ]
 })
 export class IconFastForward {}

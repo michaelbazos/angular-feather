@@ -23,6 +23,7 @@ export class IconXOctagonComponent {}
 
 @NgModule({
   declarations: [ IconXOctagonComponent ],
+  entryComponents: [ IconXOctagonComponent ],
   exports: [ IconXOctagonComponent ]
 })
 export class IconXOctagon {}

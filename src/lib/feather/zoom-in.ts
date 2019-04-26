@@ -23,6 +23,7 @@ export class IconZoomInComponent {}
 
 @NgModule({
   declarations: [ IconZoomInComponent ],
+  entryComponents: [ IconZoomInComponent ],
   exports: [ IconZoomInComponent ]
 })
 export class IconZoomIn {}

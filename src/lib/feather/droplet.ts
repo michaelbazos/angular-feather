@@ -23,6 +23,7 @@ export class IconDropletComponent {}
 
 @NgModule({
   declarations: [ IconDropletComponent ],
+  entryComponents: [ IconDropletComponent ],
   exports: [ IconDropletComponent ]
 })
 export class IconDroplet {}

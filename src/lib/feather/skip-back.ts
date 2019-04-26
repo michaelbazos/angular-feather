@@ -23,6 +23,7 @@ export class IconSkipBackComponent {}
 
 @NgModule({
   declarations: [ IconSkipBackComponent ],
+  entryComponents: [ IconSkipBackComponent ],
   exports: [ IconSkipBackComponent ]
 })
 export class IconSkipBack {}

@@ -23,6 +23,7 @@ export class IconEyeOffComponent {}
 
 @NgModule({
   declarations: [ IconEyeOffComponent ],
+  entryComponents: [ IconEyeOffComponent ],
   exports: [ IconEyeOffComponent ]
 })
 export class IconEyeOff {}

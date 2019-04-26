@@ -23,6 +23,7 @@ export class IconPocketComponent {}
 
 @NgModule({
   declarations: [ IconPocketComponent ],
+  entryComponents: [ IconPocketComponent ],
   exports: [ IconPocketComponent ]
 })
 export class IconPocket {}

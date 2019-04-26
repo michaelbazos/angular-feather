@@ -23,6 +23,7 @@ export class IconAnchorComponent {}
 
 @NgModule({
   declarations: [ IconAnchorComponent ],
+  entryComponents: [ IconAnchorComponent ],
   exports: [ IconAnchorComponent ]
 })
 export class IconAnchor {}
