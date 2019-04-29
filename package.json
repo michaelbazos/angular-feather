@@ -28,15 +28,17 @@
     "npm": ">= 3.0.0"
   },
   "scripts": {
-    "build": "ng-packagr -p package.json",
+    "build": "ng-packagr -p ng-package.json",
     "publish": "npm publish dist"
   },
   "devDependencies": {
     "@angular/compiler": "^7.1.4",
     "@angular/compiler-cli": "^7.1.4",
     "@angular/core": "^7.1.4",
+    "@types/lodash": "^4.14.123",
     "del": "^3.0.0",
     "fs-extra": "^7.0.1",
+    "lodash": "^4.17.11",
     "ng-packagr": "^4.4.5",
     "tsickle": "^0.34.0",
     "typescript": "3.1.6",
@@ -45,13 +47,5 @@
   },
   "dependencies": {
     "feather-icons": "4.19.0"
-  },
-  "ngPackage": {
-    "lib": {
-      "entryFile": "src/lib/index.ts"
-    },
-    "whitelistedNonPeerDependencies": [
-      "feather-icons"
-    ]
   }
 }
