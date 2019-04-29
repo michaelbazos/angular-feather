@@ -31,44 +31,53 @@ _2. Generate a module to host the icons you'll import_
 ng generate module icons
 ```
   
-_3. Import only the components you need_
-  
-Declare the icons that your application depends on in _IconsModule_, and export them so that the consumer of _IconsModule_ has access to them.
+_3. Import assets_ 
 
+You need to import:
+ - FeatherModule, as it contains the `<i-feather>` component
+ - The SVGs that you need
+
+We put this in IconsModule for modularity. See example below:
+
+
+*file: icon.module.ts*
 ```ts  
 import { NgModule } from '@angular/core';
-import { IconCamera, IconHeart, IconGithub } from 'angular-feather';
 
-const icons = [
-  IconCamera,
-  IconHeart,
-  IconGithub
-];
+import { FeatherModule } from 'angular-feather';
+import { Camera, Heart, Github } from 'angular-feather/icons';
 
 @NgModule({
-  exports: icons
+  exports: FeatherModule.pick({
+    Camera,
+    Heart,
+    Github
+  })
 })
 export class IconsModule { }
+
+// NOTES:
+// 1. We use the 'exports' property since <i-feather> component will be used in templates from parent modules
+// 2. Don't forget to specify FeatherModule using FeatherModule.pick({ ... }) and the icons you need
 ```
 
 _3. Use it in template_
 
-After importing the _IconsModule_ where appropriate, use the icons.
+After importing the _IconsModule_ in your feature or shared module, use the icons as follows:
 
 ```html
-<i-heart></i-heart>
-<i-github class="someclass"></i-github>
-<i-camera style="fill: red;"></i-camera>
+<i-feather name="github" class="someclass"></i-feather>
+<i-feather name="heart" style="color: green;"></i-feather>
+<i-feather name="camera"></i-feather>
 ```
 
 
 
 ### Styling icons
 
-As per angular-feather 5.1.0, icons can be customised with any CSS property that you can apply on a SVG element.
 
 ```html
-<i-heart class="big fill-red"></i-heart>
+<i-feather name="heart" class="big fill-red"></i-heart>
 ```
 
 ```css
@@ -369,9 +378,6 @@ Refer to the table below for the list of all available icons.
 
 ### FAQ
 
-_1. Can I import all icons at once?_
-
-See [issue 1](https://github.com/michaelbazos/angular-feather/issues/1)
 
 ### License
 
