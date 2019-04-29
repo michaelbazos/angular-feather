@@ -17,19 +17,17 @@ return Promise.resolve()
   .then(() => del([iconListFile]))
   // create destination folder
   .then(() => {
-    fs.appendFileSync(iconListFile, `|     | Symbol to import | Component selector |\n`);
+    fs.appendFileSync(iconListFile, `|     | Symbol to import | Icon name          |\n`);
     fs.appendFileSync(iconListFile, `| --- | ---------------- | ------------------ |\n`);
 
       fs.readdirSync(`${iconsSrcFolder}`).forEach(filename => {
         'use strict';
         const name = stripExtension(filename);
-        const moduleName = `Icon${uppercamelcase(name)}`;
-
         const svgUrl = `${unpkgUrl}/${filename}`;
 
         fs.appendFileSync(
           iconListFile,
-          `| ![${name}](${svgUrl}) | \`${moduleName}\` | \`<i-${name}>\` |\n`
+          `| ![${name}](${svgUrl}) | \`${uppercamelcase(name)}\` | \`${name}\` |\n`
         );
       });
 
