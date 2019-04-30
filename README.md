@@ -14,7 +14,7 @@ Import only the icons that you need.
 <h4>
   <a href="https://stackblitz.com/edit/angular-feather?file=src%2Fapp%2Fapp.component.html">
     >> See live demo <<
-  </a>
+  </a>  (right-click, open in new tab)
 </h4>
 
 ### Usage
