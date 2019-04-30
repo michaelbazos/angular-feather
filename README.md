@@ -47,18 +47,26 @@ import { NgModule } from '@angular/core';
 import { FeatherModule } from 'angular-feather';
 import { Camera, Heart, Github } from 'angular-feather/icons';
 
+// Select some icons (use an object, not an array)
+const icons = {
+  Camera,
+  Heart,
+  Github
+};
+
 @NgModule({
-  exports: FeatherModule.pick({
-    Camera,
-    Heart,
-    Github
-  })
+  imports: [
+    FeatherModule.pick(icons)
+  ],
+  exports: [
+    FeatherModule
+  ]
 })
 export class IconsModule { }
 
 // NOTES:
-// 1. We use the 'exports' property since <i-feather> component will be used in templates from parent modules
-// 2. Don't forget to specify FeatherModule using FeatherModule.pick({ ... }) and the icons you need
+// 1. We add FeatherModule to the 'exports', since the <i-feather> component will be used in templates of parent module
+// 2. Don't forget to pick some icons using FeatherModule.pick({ ... })
 ```
 
 _3. Use it in template_
