@@ -1,6 +1,6 @@
 import { Component, ElementRef, Input, OnInit, Inject } from '@angular/core';
 import { Icons } from './icons.provider';
-import { camelCase, upperFirst } from 'lodash'
+import { uppercamelcase } from './utils';
 
 
 @Component({
@@ -18,7 +18,7 @@ export class FeatherComponent implements OnInit {
   ngOnInit() {
     // icons are provided as an array of objects because of "multi: true"
     const icons = Object.assign({}, ...(this.icons as any as object[]));
-    const svg = icons[ upperFirst(camelCase(this.name)) ] || '';
+    const svg = icons[ uppercamelcase(this.name) ] || '';
 
     if (!svg) {
       console.warn(
