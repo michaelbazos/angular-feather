@@ -17,7 +17,7 @@ return Promise.resolve()
   .then(() => del([iconListFile]))
   // create destination folder
   .then(() => {
-    fs.appendFileSync(iconListFile, `|     | Symbol to import | Icon name          |\n`);
+    fs.appendFileSync(iconListFile, `|     | Symbol to import | HTML template      |\n`);
     fs.appendFileSync(iconListFile, `| --- | ---------------- | ------------------ |\n`);
 
       fs.readdirSync(`${iconsSrcFolder}`).forEach(filename => {
@@ -27,7 +27,7 @@ return Promise.resolve()
 
         fs.appendFileSync(
           iconListFile,
-          `| ![${name}](${svgUrl}) | \`${uppercamelcase(name)}\` | \`${name}\` |\n`
+          `| ![${name}](${svgUrl}) | \`${uppercamelcase(name)}\` | \`<i-feather name="${name}"></i-feather>\` |\n`
         );
       });
 
