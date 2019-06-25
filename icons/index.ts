@@ -186,6 +186,7 @@ export { PieChart } from './svg/pie-chart';
 export { PlayCircle } from './svg/play-circle';
 export { Play } from './svg/play';
 export { PlusCircle } from './svg/plus-circle';
+export { PlusFlash } from './svg/plus-flash';
 export { PlusSquare } from './svg/plus-square';
 export { Plus } from './svg/plus';
 export { Pocket } from './svg/pocket';
