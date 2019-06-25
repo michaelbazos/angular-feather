@@ -106,6 +106,7 @@ export { File } from './svg/file';
 export { Film } from './svg/film';
 export { Filter } from './svg/filter';
 export { Flag } from './svg/flag';
+export { Flash } from './svg/flash';
 export { FolderMinus } from './svg/folder-minus';
 export { FolderPlus } from './svg/folder-plus';
 export { Folder } from './svg/folder';
