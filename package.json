@@ -32,16 +32,16 @@
     "publish": "npm publish dist"
   },
   "devDependencies": {
-    "@angular/compiler": "^7.1.4",
-    "@angular/compiler-cli": "^7.1.4",
-    "@angular/core": "^7.1.4",
-    "del": "^3.0.0",
-    "fs-extra": "^7.0.1",
-    "ng-packagr": "^4.4.5",
-    "tsickle": "^0.34.0",
-    "typescript": "3.1.6",
+    "@angular/compiler": "^8.2.13",
+    "@angular/compiler-cli": "^8.2.13",
+    "@angular/core": "^8.2.13",
+    "del": "^5.1.0",
+    "fs-extra": "^8.1.0",
+    "ng-packagr": "^5.7.1",
+    "tsickle": "^0.36.0",
+    "typescript": "~3.4.1",
     "uppercamelcase": "^3.0.0",
-    "zone.js": "~0.8.26"
+    "zone.js": "~0.9.1"
   },
   "dependencies": {
     "feather-icons": "4.24.1"
