@@ -23,7 +23,7 @@ export class FeatherModule {
     }
   }
 
-  static pick(icons: Object): ModuleWithProviders {
+  static pick(icons: {[key: string]: string}): ModuleWithProviders {
     return {
       ngModule: FeatherModule,
       providers: [
