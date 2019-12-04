@@ -3,15 +3,18 @@ const fs = require('fs-extra');
 const uppercamelcase = require('uppercamelcase');
 
 const iconsSrcFolder = 'node_modules/feather-icons/dist/icons';
-const iconsDestFolder = 'icons/svg';
 
+const iconsDestFolder = 'icons/svg';
 const indexFile = 'icons/index.ts';
+const allFile = 'icons/all.ts';
+
+let exportAllString = `\nexport const allIcons = {\n`;
 
 const componentTemplate = fs.readFileSync('src/templates/component.ts.tpl', 'utf-8');
 
 return Promise.resolve()
   // delete feather folder and index
-  .then(() => del([iconsDestFolder, indexFile]))
+  .then(() => del([iconsDestFolder, indexFile, allFile]))
   // create destination folder
   .then(() => fs.mkdirSync(iconsDestFolder))
   .then(() => {
@@ -34,7 +37,26 @@ return Promise.resolve()
         indexFile,
         `export { ${exportName} } from './svg/${iconName}';\n`
       );
+
+      fs.appendFileSync(
+        allFile,
+        `import { ${exportName} } from './svg/${iconName}';\n`
+      );
+
+      exportAllString += `  ${exportName},\n`;
     });
+
+    exportAllString += `};\n`;
+
+    fs.appendFileSync(
+      allFile,
+      exportAllString
+    );
+
+    fs.appendFileSync(
+      indexFile,
+      `\nexport { allIcons } from './all';\n`
+    );
   })
   .catch((err) => console.log(err));
 

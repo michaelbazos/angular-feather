@@ -280,3 +280,5 @@ export { ZapOff } from './svg/zap-off';
 export { Zap } from './svg/zap';
 export { ZoomIn } from './svg/zoom-in';
 export { ZoomOut } from './svg/zoom-out';
+
+export { allIcons } from './all';
