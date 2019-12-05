@@ -391,6 +391,25 @@ Refer to the table below for the list of all available icons.
 
 ### FAQ
 
+**1. Is there a way to pick all the icons at once?**
+
+Yes, by importing `allIcons` from `'angular-feather/icons'`:
+
+```ts
+import { allIcons } from 'angular-feather/icons';
+
+@NgModule({
+  imports: [
+    FeatherModule.pick(allIcons)
+  ],
+  exports: [
+    FeatherModule
+  ]
+})
+export class IconsModule { }
+```
+
+However, keep in mind that by doing this, all icons will end up in your application bundle. While this may not be much of an issue for prototyping, it is not recommended for any application that you plan to release.
 
 ### License
 
