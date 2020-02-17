@@ -1,5 +1,5 @@
 {
-  "name": "angular-feather",
+  "name": "@gmana/angular-feather",
   "version": "6.0.8",
   "description": "Feather Icons components library for your Angular Applications",
   "repository": {
