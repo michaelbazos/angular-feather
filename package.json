@@ -1,5 +1,5 @@
 {
-  "name": "@gmana/angular-feather",
+  "name": "angular-feather",
   "version": "6.0.8",
   "description": "Feather Icons components library for your Angular Applications",
   "repository": {
@@ -37,7 +37,7 @@
     "@angular/core": "^9.0.1",
     "del": "^5.1.0",
     "fs-extra": "^8.1.0",
-    "ng-packagr": "^9.0.0",
+    "ng-packagr": "^9.0.1",
     "rxjs": "^6.5.4",
     "tsickle": "^0.38.0",
     "tslib": "^1.10.0",
