@@ -13,8 +13,8 @@ export class FeatherComponent implements OnChanges {
   @Input() name!: string;
 
   constructor(
-    private elem: ElementRef,
-    private changeDetector: ChangeDetectorRef,
+    @Inject(ElementRef) private elem: ElementRef,
+    @Inject(ChangeDetectorRef) private changeDetector: ChangeDetectorRef,
     @Inject(Icons) private icons: Icons
   ) {}
 
