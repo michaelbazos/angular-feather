@@ -85,7 +85,7 @@ After importing the _IconsModule_ in your feature or shared module, use the icon
 
 
 ```html
-<i-feather name="heart" class="big fill-red"></i-heart>
+<i-feather name="heart" class="big fill-red"></i-feather>
 ```
 
 ```css
