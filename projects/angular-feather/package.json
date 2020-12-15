@@ -1,0 +1,11 @@
+{
+  "name": "angular-feather",
+  "version": "6.1.0",
+  "peerDependencies": {
+    "@angular/common": "^11.0.4",
+    "@angular/core": "^11.0.4"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  }
+}

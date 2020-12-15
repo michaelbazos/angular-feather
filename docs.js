@@ -6,7 +6,7 @@ const iconsSrcFolder = 'node_modules/feather-icons/dist/icons';
 
 const iconListFile = 'LIST.md';
 
-const version = require('./package.json').dependencies['feather-icons'];
+const version = require('./projects/angular-feather/package.json').dependencies['feather-icons'];
 
 // const rawgitUrl = `https://cdn.rawgit.com/feathericons/feather/v${version}/icons`;
 const unpkgUrl = `https://unpkg.com/feather-icons@${version}/dist/icons`
