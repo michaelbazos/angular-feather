@@ -6,6 +6,7 @@
     "start": "ng serve",
     "lib:copy-assets": "cp README.md LICENSE dist/angular-feather",
     "lib:build": "ng build angular-feather --prod && npm run lib:copy-assets",
+    "lib:publish": "npm publish dist/angular-feather",
     "test": "ng test",
     "lint": "ng lint"
   },
