@@ -2,8 +2,7 @@
 
 [![npm](https://img.shields.io/npm/v/angular-feather.svg?style=flat-square)]()
 [![license](https://img.shields.io/npm/l/angular-feather.svg?style=flat-square)]()
-[![stars](https://img.shields.io/github/stars/michaelbazos/angular-feather.svg?style=flat-square)]()
-[![deps status](https://david-dm.org/michaelbazos/angular-feather/status.svg?style=flat-square)](https://david-dm.org/michaelbazos/angular-feather)
+[![downloads](https://img.shields.io/npm/dm/angular-feather.svg?style=flat-square)]()
 
 ### Description
 
