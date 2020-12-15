@@ -4,13 +4,16 @@ const uppercamelcase = require('uppercamelcase');
 
 const iconsSrcFolder = 'node_modules/feather-icons/dist/icons';
 
-const iconsDestFolder = 'icons/svg';
-const indexFile = 'icons/index.ts';
-const allFile = 'icons/all.ts';
+const prefixPath = 'projects/angular-feather';
+
+const iconsDestFolder = `${prefixPath}/icons/svg`;
+const indexFile = `${prefixPath}/icons/index.ts`;
+const allFile = `${prefixPath}/icons/all.ts`;
+const templateFile = `${prefixPath}/src/templates/component.ts.tpl`;
 
 let exportAllString = `\nexport const allIcons = {\n`;
 
-const componentTemplate = fs.readFileSync('src/templates/component.ts.tpl', 'utf-8');
+const componentTemplate = fs.readFileSync(templateFile, 'utf-8');
 
 return Promise.resolve()
   // delete feather folder and index

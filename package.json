@@ -1,49 +1,50 @@
 {
-  "name": "angular-feather",
-  "version": "6.0.10",
-  "description": "Feather Icons components library for your Angular Applications",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/michaelbazos/angular-feather.git"
-  },
-  "keywords": [
-    "angular2",
-    "angular",
-    "feather",
-    "icons",
-    "svg",
-    "2",
-    "ui",
-    "components",
-    "library"
-  ],
-  "author": "Michael Bazos",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/michaelbazos/angular-feather/issues"
-  },
-  "homepage": "https://github.com/michaelbazos/angular-feather#readme",
-  "engines": {
-    "node": ">= 6.9.0",
-    "npm": ">= 3.0.0"
-  },
+  "name": "workspace",
+  "version": "0.0.0",
   "scripts": {
-    "build": "ng-packagr -p ng-package.json",
-    "publish": "npm publish dist"
+    "ng": "ng",
+    "start": "ng serve",
+    "lib:copy-assets": "cp README.md LICENSE dist/angular-feather",
+    "lib:build": "ng build angular-feather --prod && npm run lib:copy-assets",
+    "test": "ng test",
+    "lint": "ng lint"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "~11.0.4",
+    "@angular/common": "~11.0.4",
+    "@angular/compiler": "~11.0.4",
+    "@angular/core": "~11.0.4",
+    "@angular/forms": "~11.0.4",
+    "@angular/platform-browser": "~11.0.4",
+    "@angular/platform-browser-dynamic": "~11.0.4",
+    "@angular/router": "~11.0.4",
+    "feather-icons": "4.24.1",
+    "rxjs": "~6.6.0",
+    "tslib": "^2.0.0",
+    "zone.js": "~0.10.2"
   },
   "devDependencies": {
-    "@angular/compiler": "^9.1.4",
-    "@angular/compiler-cli": "^9.1.4",
-    "@angular/core": "^9.1.4",
-    "del": "^5.1.0",
-    "fs-extra": "^9.0.0",
-    "ng-packagr": "^9.1.2",
-    "tsickle": "^0.38.1",
-    "typescript": "~3.8.3",
-    "uppercamelcase": "^3.0.0",
-    "zone.js": "~0.10.3"
-  },
-  "dependencies": {
-    "feather-icons": "4.24.1"
+    "@angular-devkit/build-angular": "~0.1100.4",
+    "@angular/cli": "~11.0.4",
+    "@angular/compiler-cli": "~11.0.4",
+    "@types/jasmine": "~3.6.0",
+    "@types/node": "^12.11.1",
+    "codelyzer": "^6.0.0",
+    "del": "^6.0.0",
+    "fs-extra": "^9.0.1",
+    "jasmine-core": "~3.6.0",
+    "jasmine-spec-reporter": "~5.0.0",
+    "karma": "~5.1.0",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage": "~2.0.3",
+    "karma-jasmine": "~4.0.0",
+    "karma-jasmine-html-reporter": "^1.5.0",
+    "ng-packagr": "^11.0.0",
+    "protractor": "~7.0.0",
+    "ts-node": "~8.3.0",
+    "tslint": "~6.1.0",
+    "typescript": "~4.0.2",
+    "uppercamelcase": "^3.0.0"
   }
 }
