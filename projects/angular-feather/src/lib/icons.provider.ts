@@ -1,4 +1,3 @@
-
 export class Icons {
-  constructor(private icons: Object) {}
+  constructor(private icons: object) {}
 }
