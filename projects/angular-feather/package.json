@@ -24,8 +24,8 @@
   },
   "homepage": "https://github.com/michaelbazos/angular-feather#readme",
   "peerDependencies": {
-    "@angular/common": "^11.0.4",
-    "@angular/core": "^11.0.4"
+    "@angular/common": "~13.1.1",
+    "@angular/core": "~13.1.1"
   },
   "dependencies": {
     "tslib": "^2.0.0"
