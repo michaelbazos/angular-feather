@@ -85,9 +85,13 @@ import { Crosshair } from './svg/crosshair';
 import { Database } from './svg/database';
 import { Delete } from './svg/delete';
 import { Disc } from './svg/disc';
+import { DivideCircle } from './svg/divide-circle';
+import { DivideSquare } from './svg/divide-square';
+import { Divide } from './svg/divide';
 import { DollarSign } from './svg/dollar-sign';
 import { DownloadCloud } from './svg/download-cloud';
 import { Download } from './svg/download';
+import { Dribbble } from './svg/dribbble';
 import { Droplet } from './svg/droplet';
 import { Edit2 } from './svg/edit-2';
 import { Edit3 } from './svg/edit-3';
@@ -369,9 +373,13 @@ export const allIcons = {
   Database,
   Delete,
   Disc,
+  DivideCircle,
+  DivideSquare,
+  Divide,
   DollarSign,
   DownloadCloud,
   Download,
+  Dribbble,
   Droplet,
   Edit2,
   Edit3,

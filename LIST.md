@@ -87,9 +87,13 @@
 | ![database](https://unpkg.com/feather-icons@undefined/dist/icons/database.svg) | `Database` | `<i-feather name="database"></i-feather>` |
 | ![delete](https://unpkg.com/feather-icons@undefined/dist/icons/delete.svg) | `Delete` | `<i-feather name="delete"></i-feather>` |
 | ![disc](https://unpkg.com/feather-icons@undefined/dist/icons/disc.svg) | `Disc` | `<i-feather name="disc"></i-feather>` |
+| ![divide-circle](https://unpkg.com/feather-icons@undefined/dist/icons/divide-circle.svg) | `DivideCircle` | `<i-feather name="divide-circle"></i-feather>` |
+| ![divide-square](https://unpkg.com/feather-icons@undefined/dist/icons/divide-square.svg) | `DivideSquare` | `<i-feather name="divide-square"></i-feather>` |
+| ![divide](https://unpkg.com/feather-icons@undefined/dist/icons/divide.svg) | `Divide` | `<i-feather name="divide"></i-feather>` |
 | ![dollar-sign](https://unpkg.com/feather-icons@undefined/dist/icons/dollar-sign.svg) | `DollarSign` | `<i-feather name="dollar-sign"></i-feather>` |
 | ![download-cloud](https://unpkg.com/feather-icons@undefined/dist/icons/download-cloud.svg) | `DownloadCloud` | `<i-feather name="download-cloud"></i-feather>` |
 | ![download](https://unpkg.com/feather-icons@undefined/dist/icons/download.svg) | `Download` | `<i-feather name="download"></i-feather>` |
+| ![dribbble](https://unpkg.com/feather-icons@undefined/dist/icons/dribbble.svg) | `Dribbble` | `<i-feather name="dribbble"></i-feather>` |
 | ![droplet](https://unpkg.com/feather-icons@undefined/dist/icons/droplet.svg) | `Droplet` | `<i-feather name="droplet"></i-feather>` |
 | ![edit-2](https://unpkg.com/feather-icons@undefined/dist/icons/edit-2.svg) | `Edit2` | `<i-feather name="edit-2"></i-feather>` |
 | ![edit-3](https://unpkg.com/feather-icons@undefined/dist/icons/edit-3.svg) | `Edit3` | `<i-feather name="edit-3"></i-feather>` |
