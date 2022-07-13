@@ -1,8 +1,8 @@
 ## angular-feather
 
-[![npm](https://img.shields.io/npm/v/angular-feather.svg?style=flat-square)]()
-[![license](https://img.shields.io/npm/l/angular-feather.svg?style=flat-square)]()
-[![downloads](https://img.shields.io/npm/dm/angular-feather.svg?style=flat-square)]()
+<a href="https://www.npmjs.com/package/angular-feather"><img src="https://img.shields.io/npm/v/angular-feather?style=flat-square" /></a>
+<a href="LICENSE"><img src="https://img.shields.io/npm/l/angular-feather?style=flat-square" /></a>
+<a href="https://www.npmjs.com/package/angular-feather"><img src="https://img.shields.io/npm/dm/angular-feather?style=flat-square" /></a>
 
 ### Description
 
