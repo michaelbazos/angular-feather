@@ -1,11 +1,13 @@
 {
   "name": "workspace",
-  "version": "6.4.0",
+  "version": "6.4.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "lib:copy-assets": "cp README.md LICENSE dist/angular-feather",
     "lib:build": "ng build angular-feather --configuration production && npm run lib:copy-assets",
+    "lib:pack": "cd dist/angular-feather && npm pack",
+    "lib:publishLocally": "npm run lib:build && npm run lib:pack",
     "lib:publish": "npm publish dist/angular-feather",
     "test": "ng test",
     "lint": "ng lint"
@@ -20,7 +22,7 @@
     "@angular/platform-browser": "^14.0.4",
     "@angular/platform-browser-dynamic": "^14.0.4",
     "@angular/router": "^14.0.4",
-    "feather-icons": "4.28.0",
+    "feather-icons": "4.29.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.1",
     "zone.js": "~0.11.4"
@@ -42,7 +44,6 @@
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
     "ng-packagr": "^14.0.2",
-    "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~4.7.4",
