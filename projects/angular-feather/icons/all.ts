@@ -232,6 +232,7 @@ import { StopCircle } from './svg/stop-circle';
 import { Sun } from './svg/sun';
 import { Sunrise } from './svg/sunrise';
 import { Sunset } from './svg/sunset';
+import { Table } from './svg/table';
 import { Tablet } from './svg/tablet';
 import { Tag } from './svg/tag';
 import { Target } from './svg/target';
@@ -520,6 +521,7 @@ export const allIcons = {
   Sun,
   Sunrise,
   Sunset,
+  Table,
   Tablet,
   Tag,
   Target,
