@@ -6,11 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [6.5.0] - 2022-07-14
+## [6.5.0] - 2022-07-17
 
 ### Changed
 - Update to Feather 4.29.0
-- Relax peer dependency so Angular >=11 is allowed 
+- Relax peer dependency so Angular >=12 is allowed
+
+### Chore
+- Use eslint instead of tslint
 
 ## [6.4.1] - 2022-07-13
 

@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/michaelbazos/angular-feather#readme",
   "peerDependencies": {
-    "@angular/core": ">=11"
+    "@angular/core": ">=12"
   },
   "dependencies": {
     "tslib": "^2.0.0"

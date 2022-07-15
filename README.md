@@ -3,7 +3,7 @@
 <a href="https://www.npmjs.com/package/angular-feather"><img src="https://img.shields.io/npm/v/angular-feather?style=flat-square" /></a>
 <a href="LICENSE"><img src="https://img.shields.io/npm/l/angular-feather?style=flat-square" /></a>
 <a href="https://www.npmjs.com/package/angular-feather"><img src="https://img.shields.io/npm/dm/angular-feather?style=flat-square" /></a>
-<img src="https://img.shields.io/badge/Angular%20Version-%3E%3D11-red?style=flat-square&logo=angular" />
+<img src="https://img.shields.io/badge/Angular%20Version-%3E%3D12-red?style=flat-square&logo=angular" />
 
 
 ### Description
