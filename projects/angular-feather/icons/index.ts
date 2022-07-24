@@ -232,6 +232,7 @@ export { StopCircle } from './svg/stop-circle';
 export { Sun } from './svg/sun';
 export { Sunrise } from './svg/sunrise';
 export { Sunset } from './svg/sunset';
+export { Table } from './svg/table';
 export { Tablet } from './svg/tablet';
 export { Tag } from './svg/tag';
 export { Target } from './svg/target';

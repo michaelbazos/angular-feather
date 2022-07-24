@@ -28,11 +28,21 @@
             "tsConfig": "projects/angular-feather/tsconfig.spec.json",
             "karmaConfig": "projects/angular-feather/karma.conf.js"
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/angular-feather/**/*.ts",
+              "projects/angular-feather/**/*.html"
+            ]
+          }
         }
       }
     }
   },
   "cli": {
-    "analytics": false
+    "analytics": false,
+    "defaultCollection": "@angular-eslint/schematics"
   }
 }

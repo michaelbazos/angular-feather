@@ -1,6 +1,6 @@
 {
   "name": "angular-feather",
-  "version": "6.4.1",
+  "version": "6.5.0",
   "description": "Feather Icons components library for your Angular Applications",
   "repository": {
     "type": "git",
@@ -24,8 +24,7 @@
   },
   "homepage": "https://github.com/michaelbazos/angular-feather#readme",
   "peerDependencies": {
-    "@angular/common": "^14.0.4",
-    "@angular/core": "^14.0.4"
+    "@angular/core": ">=12"
   },
   "dependencies": {
     "tslib": "^2.0.0"

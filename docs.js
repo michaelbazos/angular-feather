@@ -11,7 +11,6 @@ const version = require('./projects/angular-feather/package.json').dependencies[
 // const rawgitUrl = `https://cdn.rawgit.com/feathericons/feather/v${version}/icons`;
 const unpkgUrl = `https://unpkg.com/feather-icons@${version}/dist/icons`
 
-
 return Promise.resolve()
   // delete previous output
   .then(() => del([iconListFile]))
