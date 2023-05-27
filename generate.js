@@ -21,7 +21,7 @@ return Promise.resolve()
   // create destination folder
   .then(() => fs.mkdirSync(iconsDestFolder))
   .then(() => {
-    fs.readdirSync(`${iconsSrcFolder}`).forEach(filename => {
+    fs.readdirSync(iconsSrcFolder).forEach(filename => {
       'use strict';
       const iconName = stripExtension(filename);
       const exportName = uppercamelcase(iconName);

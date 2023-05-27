@@ -21,8 +21,8 @@
     ],
     "paths": {
       "angular-feather": [
-        "dist/angular-feather/angular-feather",
-        "dist/angular-feather"
+        "dist/ngx-feather/angular-feather",
+        "dist/ngx-feather"
       ]
     },
     "useDefineForClassFields": false

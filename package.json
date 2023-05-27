@@ -1,20 +1,19 @@
 {
-  "name": "workspace",
-  "version": "6.5.0",
+  "name": "@corridor/ngx-feather",
+  "version": "16.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "lib:copy-assets": "cp README.md LICENSE dist/angular-feather",
+    "lib:copy-assets": "cp README.md LICENSE dist/ngx-feather",
     "lib:build": "ng build angular-feather --configuration production && npm run lib:copy-assets",
-    "lib:pack": "cd dist/angular-feather && npm pack",
+    "lib:pack": "cd dist/ngx-feather && npm pack",
     "lib:publishLocally": "npm run lib:build && npm run lib:pack",
-    "lib:publish": "npm publish dist/angular-feather",
+    "lib:publish": "npm publish dist/ngx-feather/ --access=public --scoped=@corridor",
     "lib:test": "ng test angular-feather --code-coverage",
     "lib:test-headless": "ng test angular-feather --code-coverage --watch=false --browsers=ChromeHeadless",
     "test": "ng test",
     "lint": "ng lint"
   },
-  "private": true,
   "devDependencies": {
     "@angular-devkit/build-angular": "^16.0.3",
     "@angular-eslint/builder": "16.0.2",
@@ -52,5 +51,17 @@
     "typescript": "~4.9.5",
     "uppercamelcase": "^3.0.0",
     "zone.js": "~0.13.0"
-  }
+  },
+  "description": "<a href=\"https://www.npmjs.com/package/angular-feather\"><img src=\"https://img.shields.io/npm/v/angular-feather?style=flat-square\" /></a> <a href=\"LICENSE\"><img src=\"https://img.shields.io/npm/l/angular-feather?style=flat-square\" /></a> <a href=\"https://www.npmjs.com/package/angular-feather\"><img src=\"https://img.shields.io/npm/dm/angular-feather?style=flat-square\" /></a> <img src=\"https://img.shields.io/badge/Angular%20Version-%3E%3D12-red?style=flat-square&logo=angular\" />",
+  "main": "docs.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anikets43/angular-feather.git"
+  },
+  "author": "michaelbazos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anikets43/angular-feather/issues"
+  },
+  "homepage": "https://github.com/anikets43/angular-feather#readme"
 }
