@@ -6,7 +6,9 @@ import {
   ChangeDetectorRef,
   OnChanges,
   SimpleChanges,
+  SecurityContext,
 } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
 import { Icons } from './icons.provider';
 import { uppercamelcase } from './utils';
 
@@ -21,7 +23,8 @@ export class FeatherComponent implements OnChanges {
   constructor(
     @Inject(ElementRef) private elem: ElementRef,
     @Inject(ChangeDetectorRef) private changeDetector: ChangeDetectorRef,
-    @Inject(Icons) private icons: Icons
+    @Inject(Icons) private icons: Icons,
+    @Inject(DomSanitizer) private sanitizer: DomSanitizer,
   ) {}
 
   ngOnChanges(changes: SimpleChanges) {
@@ -36,7 +39,9 @@ export class FeatherComponent implements OnChanges {
       );
     }
 
-    this.elem.nativeElement.innerHTML = svg;
+    // Since the icons are precompiled we can trust them as safe html.
+    this.elem.nativeElement.innerHTML = this.sanitizer.sanitize(SecurityContext.HTML, this.sanitizer.bypassSecurityTrustHtml(svg));
+
     this.changeDetector.markForCheck();
   }
 }
